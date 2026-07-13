@@ -1,0 +1,7 @@
+HUMAN BASE MESH
+Source: BoQsc/Godot-3D-Male-Base-Mesh
+Original author: orange-juice-games
+License: CC0 1.0 Universal / public domain dedication
+Source repository: https://github.com/BoQsc/Godot-3D-Male-Base-Mesh
+
+The Deni clothing, material treatment, face additions, character design, export pipeline and website presentation are original additions for VEO ZAVOD.
