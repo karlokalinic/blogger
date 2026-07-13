@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 const COOKIE_NAME = "veo_studio_session";
 
 export function studioProtectionEnabled() {
-  return Boolean(process.env.STUDIO_PASSWORD);
+  return process.env.NODE_ENV === "production" || Boolean(process.env.STUDIO_PASSWORD);
 }
 
 function sessionValue() {
