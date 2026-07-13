@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu, Radio, X } from "lucide-react";
 import { useState } from "react";
 import { Atmosphere } from "./atmosphere";
+import { RevealObserver } from "./reveal-observer";
 import { SignalAudioDock } from "./signal-audio-dock";
 import { SoundToggle } from "./sound-toggle";
 
@@ -12,6 +13,7 @@ const links = [
   ["/", "Signal"],
   ["/archive", "World archive"],
   ["/devlog", "Devlog"],
+  ["/captures", "Captures"],
   ["/about", "About"],
 ] as const;
 
@@ -23,6 +25,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
     <div className={inStudio ? "site-shell is-studio" : "site-shell"}>
       <Atmosphere />
+      <RevealObserver />
       <div className="noise-layer" aria-hidden="true" />
       {!inStudio && (
         <header className="site-header">

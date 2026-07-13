@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Box, Eye, RadioTower, Sparkles } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
 import { archiveEntries, devlogs, project } from "@/lib/content";
+import { visualChapters } from "@/lib/visual-progress";
 
 export default function HomePage() {
   return (
@@ -50,8 +51,8 @@ export default function HomePage() {
 
         <div className="featured-log reveal-block">
           <Link href={`/devlog/${devlogs[0].slug}`} className="featured-log-image image-distort">
-            <Image src={devlogs[0].image} alt="Winter road and bus stop in Prudina" fill sizes="(max-width: 900px) 100vw, 62vw" />
-            <span className="image-index">027</span>
+            <Image src={devlogs[0].image} alt={devlogs[0].imageAlt} fill sizes="(max-width: 900px) 100vw, 62vw" />
+            <span className="image-index">{devlogs[0].number.replace("LOG ", "")}</span>
           </Link>
           <div className="featured-log-copy">
             <div className="log-meta"><span>{devlogs[0].number}</span><span>{devlogs[0].date}</span><span>{devlogs[0].readTime}</span></div>
@@ -62,10 +63,11 @@ export default function HomePage() {
         </div>
 
         <div className="log-row">
-          {devlogs.slice(1).map((post) => (
+          {devlogs.slice(1, 3).map((post) => (
             <article className="log-card reveal-block" key={post.slug}>
               <Link href={`/devlog/${post.slug}`} className="log-card-image image-distort">
-                <Image src={post.image} alt="" fill sizes="(max-width: 700px) 100vw, 45vw" />
+                <Image src={post.image} alt={post.imageAlt} fill sizes="(max-width: 700px) 100vw, 45vw" />
+                {post.gallery && <span className="log-card-captures">{post.gallery.length} CAPTURES</span>}
               </Link>
               <div className="log-meta"><span>{post.number}</span><span>{post.category}</span><span>{post.date}</span></div>
               <h3><Link href={`/devlog/${post.slug}`}>{post.title}</Link></h3>
@@ -88,6 +90,28 @@ export default function HomePage() {
           <Link href="/archive/motel-bijeli-jelen" className="primary-button light-button">Inspect the motel <Eye size={15} /></Link>
         </div>
         <span className="vertical-caption">ARCHIVE CAMERA / FRAME 00147 / WEATHER: SLEET</span>
+      </section>
+
+      <section className="home-capture-section section-shell">
+        <header className="section-heading compact reveal-block">
+          <div>
+            <p className="section-kicker"><span /> Visual build / chapter by chapter</p>
+            <h2>See the game<br />become itself.</h2>
+          </div>
+          <Link href="/captures" className="line-link">Open capture room <ArrowRight size={14} /></Link>
+        </header>
+        <div className="home-capture-grid">
+          {visualChapters.slice(1).map((chapter) => {
+            const frame = chapter.frames[0];
+            return (
+              <Link href="/captures" className="home-capture-card reveal-block" key={chapter.id}>
+                <div><Image src={frame.src} alt={frame.alt} fill sizes="(max-width: 700px) 100vw, 33vw" /><span>{chapter.number}</span><small>{frame.status}</small></div>
+                <h3>{chapter.title}</h3>
+                <p>{chapter.progress}% / {chapter.phase}</p>
+              </Link>
+            );
+          })}
+        </div>
       </section>
 
       <section className="archive-preview section-shell">

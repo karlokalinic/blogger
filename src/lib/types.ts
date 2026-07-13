@@ -26,7 +26,27 @@ export type DevlogPost = {
   readTime: string;
   category: string;
   image: string;
+  imageAlt: string;
+  captureLabel?: string;
+  status: "prototype" | "implemented" | "testing" | "design-note";
+  build: string;
+  gallery?: DevlogShot[];
+  facts?: Array<{ label: string; value: string }>;
+  code?: {
+    filename: string;
+    language: string;
+    snippet: string;
+  };
+  tryIt?: string[];
   body: Array<{ heading?: string; paragraphs: string[] }>;
+};
+
+export type DevlogShot = {
+  src: string;
+  alt: string;
+  caption: string;
+  label: string;
+  position?: string;
 };
 
 export type ProjectTask = {
