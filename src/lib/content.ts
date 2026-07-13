@@ -4,8 +4,8 @@ export const project = {
   title: "VEO ZAVOD",
   subtitle: "An archive of a place learning to remember you",
   chapter: "PRE-PRODUCTION // WINTER BUILD",
-  completion: 38,
-  build: "0.4.7",
+  completion: 40,
+  build: "0.4.9",
 };
 
 export const archiveEntries: ArchiveEntry[] = [
@@ -340,6 +340,72 @@ export const archiveEntries: ArchiveEntry[] = [
 ];
 
 export const devlogs: DevlogPost[] = [
+  {
+    slug: "deni-doctor-first-downloadable-character",
+    number: "LOG 033",
+    title: "Deni is no longer trapped inside a screenshot",
+    dek: "The clinic doctor is now a downloadable humanoid asset: turn him around in the browser, inspect the wireframe, then take him into your own build.",
+    date: "13 JUL 2026",
+    readTime: "9 MIN",
+    category: "CHARACTER ASSET",
+    image: "/images/deni-doctor-turnaround.png",
+    imageAlt: "Four-view full-body turnaround of Deni, the young Prudina clinic doctor",
+    captureLabel: "CHARACTER TURNAROUND / DENI / ASSET 01",
+    status: "implemented",
+    build: "0.4.9",
+    model: {
+      url: "/models/deni-doctor/deni-doctor-rigged.glb",
+      pack: "/downloads/deni-doctor-character-pack.zip",
+      obj: "/models/deni-doctor/deni-doctor-mixamo.obj",
+      name: "Deni / clinic doctor",
+    },
+    facts: [
+      { label: "TRIANGLES", value: "5.9K" },
+      { label: "HUMANOID BONES", value: "56" },
+      { label: "MATERIALS", value: "10" },
+      { label: "DOWNLOAD", value: "GLB + OBJ" },
+    ],
+    gallery: [
+      { src: "/images/deni-doctor-clinic-reference.png", alt: "Deni leaning over a laboratory table in the Old Prudina clinic", caption: "The source frame established the person before the asset: a temporary doctor at the point where procedure has stopped protecting him.", label: "01 / SOURCE FRAME", position: "50% 42%" },
+      { src: "/images/deni-doctor-turnaround.png", alt: "Front, profile, rear and three-quarter turnaround of Deni", caption: "The turnaround locks his height, exhausted face, damaged coat, ribbed sweater and work shoes before geometry begins making its own excuses.", label: "02 / TURNAROUND" },
+      { src: "/images/deni-doctor-model-capture.png", alt: "The actual Deni GLB rendered in the website's interactive Three.js inspection room", caption: "The shipped GLB in the same browser viewer visitors can orbit above. No substitute render: this is the current 5.9K-triangle geometry under production light.", label: "03 / ACTUAL GLB" },
+      { src: "/images/deni-clinic.png", alt: "Deni reviewing water evidence in a dim examination room", caption: "The production target remains a believable worker under pressure, not a horror mascot. The clothes must look worn because he works in them, not because the genre requested dirt.", label: "04 / SCENE TARGET" },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Deni began as a person leaning on a table while two bottles asked him to choose between a correct procedure and a useful act. That frame worked, but a character trapped inside one composition is still an illustration. He could not enter the corridor, turn away from the player, carry the sample or fail to hold eye contact. This pass gives him a body the game can actually move.",
+          "The first downloadable model is deliberately specific. He is twenty-five, 1.83 metres tall, under-rested rather than undead, and wearing the same off-white clinic coat over a charcoal ribbed sweater. The pens remain in the breast pocket. The shoes are work shoes, not costume boots. His silhouette should read as a young doctor who expected a temporary placement and stayed long enough for the building to begin using him as furniture.",
+        ],
+      },
+      {
+        heading: "A production asset, not a claim of impossible fidelity",
+        paragraphs: [
+          "The model is built for the visual distance of a PS2-era survival-horror camera under modern lighting. It uses 5.9 thousand triangles, thirty-nine separated geometry pieces, ten named materials and a small clinical idle. The face is intentionally economical; light, posture and timing are expected to finish the performance.",
+          "This is not a photogrammetry scan and the rigid clothing sections will not replace a final deformation pass. It is a real, inspectable asset that can already stand in the clinic, accept camera and lighting tests, and expose which proportions fail before weeks are spent polishing them.",
+        ],
+      },
+      {
+        heading: "The rig has somewhere honest to go next",
+        paragraphs: [
+          "The browser GLB carries a fifty-six-bone humanoid skeleton with complete finger chains. A subtle clinical idle proves that the hierarchy survives export. For broader animation, the pack also contains a neutral A-pose OBJ, MTL file and six material textures prepared for Mixamo's auto-rigger.",
+          "The next pass is not more dirt. It is deformation: elbows that keep the lab-coat sleeve volume, a coat hem that does not cut through the thigh, hands that can hold Sample 04, and an expression set small enough to remain uncomfortable instead of theatrical.",
+        ],
+      },
+      {
+        heading: "He is yours to inspect",
+        paragraphs: [
+          "Orbit him above, stop the idle, expose the wireframe and download the complete package. The archive is allowed to be proud because the evidence is attached. If the model breaks in another tool, that failure belongs in the next log rather than behind a render.",
+        ],
+      },
+    ],
+    tryIt: [
+      "Drag across the 3D window and check whether Deni still reads correctly from behind.",
+      "Toggle wireframe and inspect the density around the face, coat and hands.",
+      "Download the complete pack, upload the neutral A-pose OBJ to Mixamo and choose the no-fingers skeleton route.",
+      "Place the rig in a 1.83 m test capsule before changing its scale in-engine.",
+    ],
+  },
   {
     slug: "corridor-changes-when-unseen",
     number: "LOG 032",

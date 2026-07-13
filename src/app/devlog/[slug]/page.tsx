@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle2, FlaskConical, SquareTerminal } from "lucide-react";
 import { notFound } from "next/navigation";
 import { ArticleProgress } from "@/components/article-progress";
+import { CharacterModelShowcase } from "@/components/character-model-showcase";
 import { ScreenshotGallery } from "@/components/screenshot-gallery";
 import { ShareButton } from "@/components/share-button";
 import { SiteFooter } from "@/components/site-footer";
@@ -41,6 +42,7 @@ export default async function DevlogPostPage({ params }: { params: Promise<{ slu
         <Image src={post.image} alt={post.imageAlt} fill priority sizes="100vw" />
         <span>{post.captureLabel ?? `PRODUCTION CAPTURE / BUILD ${post.build}`}</span>
       </div>
+      {post.model && <CharacterModelShowcase model={post.model.url} pack={post.model.pack} obj={post.model.obj} name={post.model.name} />}
       {post.gallery && <ScreenshotGallery shots={post.gallery} title={post.title} />}
       {post.facts && (
         <section className="production-facts section-shell" aria-label="Build facts">

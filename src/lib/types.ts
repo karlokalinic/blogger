@@ -31,6 +31,12 @@ export type DevlogPost = {
   status: "prototype" | "implemented" | "testing" | "design-note";
   build: string;
   gallery?: DevlogShot[];
+  model?: {
+    url: string;
+    pack: string;
+    obj: string;
+    name: string;
+  };
   facts?: Array<{ label: string; value: string }>;
   code?: {
     filename: string;
