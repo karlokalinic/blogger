@@ -1,0 +1,65 @@
+[
+  {
+    "id": "L01",
+    "name": "North House",
+    "public": "state reception property",
+    "operational": "restricted meetings and protocol control",
+    "sound": "ventilation and distant cutlery",
+    "object": "disconnected service bell",
+    "maintenance": "false door-closure alarms"
+  },
+  {
+    "id": "L02",
+    "name": "Studio North B",
+    "public": "recording room",
+    "operational": "late exports and undocumented guides",
+    "sound": "computer fans and booth relay",
+    "object": "paper-capped water glass",
+    "maintenance": "mislabeled patch channel"
+  },
+  {
+    "id": "L03",
+    "name": "RP Archive Annex",
+    "public": "media storage",
+    "operational": "availability control",
+    "sound": "tape robots and alarms",
+    "object": "empty folder indexed as twelve files",
+    "maintenance": "summer cooling failure"
+  },
+  {
+    "id": "L04",
+    "name": "NARODNA KUĆA Compound",
+    "public": "reality-show home",
+    "operational": "continuous managed confession",
+    "sound": "applause through walls",
+    "object": "paid voting terminal",
+    "maintenance": "camera blind spot"
+  },
+  {
+    "id": "L05",
+    "name": "Clinic Records Basement",
+    "public": "health records",
+    "operational": "audit and privacy breach",
+    "sound": "delayed fluorescent ignition",
+    "object": "ticket-stock printer paper",
+    "maintenance": "partial offline archive"
+  },
+  {
+    "id": "L06",
+    "name": "Fort Umbralis Hall",
+    "public": "prestige venue",
+    "operational": "political ceremony",
+    "sound": "stage machinery echo",
+    "object": "crossed-out exit cue",
+    "maintenance": "narrow backstage route"
+  },
+  {
+    "id": "L07",
+    "name": "Old Block 17",
+    "public": "residential building",
+    "operational": "childhood mythology and fan tourism",
+    "sound": "radiator knock",
+    "object": "button ticket",
+    "maintenance": "removed intercom labels"
+  }
+]

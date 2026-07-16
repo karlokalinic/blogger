@@ -1,0 +1,3282 @@
+[
+  {
+    "asset_id": "A001",
+    "category": "Identity and ordinary life",
+    "asset": "Scanned birth-register extract with one corrected letter in the surname.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A002",
+    "category": "Identity and ordinary life",
+    "asset": "Two incompatible childhood addresses printed by different anniversary magazines.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A003",
+    "category": "Identity and ordinary life",
+    "asset": "Primary-school music notebook with a teacher's red correction over the first appearance of 'Karlyta'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A004",
+    "category": "Identity and ordinary life",
+    "asset": "Photocopy of a library card showing what she borrowed before becoming famous.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A005",
+    "category": "Identity and ordinary life",
+    "asset": "Bus pass laminated twice, with the second layer trapping a strand of silver tinsel.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A006",
+    "category": "Identity and ordinary life",
+    "asset": "Handwritten recipe attributed to her mother and later used in a supermarket campaign.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A007",
+    "category": "Identity and ordinary life",
+    "asset": "Apartment intercom label removed after fans began photographing the entrance.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A008",
+    "category": "Identity and ordinary life",
+    "asset": "Veterinary invoice for a dog absent from every authorized biography.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A009",
+    "category": "Identity and ordinary life",
+    "asset": "Old phone contact sheet where the President's office is saved under a florist's name.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A010",
+    "category": "Identity and ordinary life",
+    "asset": "Dry-cleaning ticket collected on the night of a nationally televised breakdown.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A011",
+    "category": "Identity and ordinary life",
+    "asset": "Passport renewal photograph rejected because the hair obscured one eye.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A012",
+    "category": "Identity and ordinary life",
+    "asset": "Signed parcel-delivery slip that becomes disputed because the signature differs from her contracts.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A013",
+    "category": "Music production",
+    "asset": "Official 16-bit WAV technical sheet.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A014",
+    "category": "Music production",
+    "asset": "Extended 32-bit WAV technical sheet.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A015",
+    "category": "Music production",
+    "asset": "Multitrack channel list with GUIDE_M present in one version and absent in another.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A016",
+    "category": "Music production",
+    "asset": "Studio invoice with an unexplained additional night session.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A017",
+    "category": "Music production",
+    "asset": "Producer's handwritten comp-vocal map.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A018",
+    "category": "Music production",
+    "asset": "Lyric sheet containing only verbs and stage directions.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A019",
+    "category": "Music production",
+    "asset": "Autotune graph printed as part of a hostile newspaper article.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A020",
+    "category": "Music production",
+    "asset": "Microphone locker log showing a microphone removed after the studio closed.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A021",
+    "category": "Music production",
+    "asset": "Rejected master labelled TOO CLEAR.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A022",
+    "category": "Music production",
+    "asset": "Backing-vocal roster with one name blacked out.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A023",
+    "category": "Music production",
+    "asset": "Session tea order whose time contradicts the producer's public timeline.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A024",
+    "category": "Music production",
+    "asset": "Hard-drive checksum report submitted during discovery.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A025",
+    "category": "Music production",
+    "asset": "Fan-made spectral comparison poster.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A026",
+    "category": "Music production",
+    "asset": "Radio edit with one inhale removed before the phrase supplied by Karlytta.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A027",
+    "category": "Music production",
+    "asset": "Instrumental version used at a state reception.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A028",
+    "category": "Music production",
+    "asset": "Acapella leak whose room tone suggests a different studio.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A029",
+    "category": "Live performance",
+    "asset": "Ticket for a concert cancelled after the audience had already entered.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A030",
+    "category": "Live performance",
+    "asset": "Seat map with the presidential box removed from the public plan.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A031",
+    "category": "Live performance",
+    "asset": "Tour laminate granting access to every room except 'Blue 4'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A032",
+    "category": "Live performance",
+    "asset": "Set list where KARLYTTA is written twice and crossed out once.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A033",
+    "category": "Live performance",
+    "asset": "Promoter email requiring the corridor behind the stage to remain locked.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A034",
+    "category": "Live performance",
+    "asset": "Audience video that continues after the broadcast cuts away.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A035",
+    "category": "Live performance",
+    "asset": "Confetti strip printed with a sentence nobody remembers approving.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A036",
+    "category": "Live performance",
+    "asset": "Broken in-ear monitor preserved by a fan.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A037",
+    "category": "Live performance",
+    "asset": "Hotel key card found inside a costume boot.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A038",
+    "category": "Live performance",
+    "asset": "Stage manager's cue sheet with a six-minute unscheduled blackout.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A039",
+    "category": "Live performance",
+    "asset": "Emergency weather notice printed on the back of VIP wristbands.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A040",
+    "category": "Live performance",
+    "asset": "Tour bus fuel receipt placing the convoy somewhere the official schedule denies.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A041",
+    "category": "Press and broadcast",
+    "asset": "Breaking-news article announcing the lawsuit.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A042",
+    "category": "Press and broadcast",
+    "asset": "Correction notice that changes 'assault' to 'alleged coercion' without explaining why.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A043",
+    "category": "Press and broadcast",
+    "asset": "Television lower-third calling her 'the nation's daughter' during a legal interview.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A044",
+    "category": "Press and broadcast",
+    "asset": "Raw interview transcript beside the six-minute broadcast cut.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A045",
+    "category": "Press and broadcast",
+    "asset": "Internal memo ranking possible facial expressions for the thumbnail.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A046",
+    "category": "Press and broadcast",
+    "asset": "Radio playlist showing her protest song between advertisements for state bonds.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A047",
+    "category": "Press and broadcast",
+    "asset": "Obituary template accidentally published while she is alive.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A048",
+    "category": "Press and broadcast",
+    "asset": "Newspaper style guide explaining when Karlytta may be called an artist versus entertainer.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A049",
+    "category": "Press and broadcast",
+    "asset": "Press-pool seating chart that keeps independent journalists behind a camera crane.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A050",
+    "category": "Press and broadcast",
+    "asset": "Auto-generated subtitle file that turns 'ne' into 'da'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A051",
+    "category": "Press and broadcast",
+    "asset": "Morning-show makeup release form presented as consent to archival reuse.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A052",
+    "category": "Press and broadcast",
+    "asset": "Broadcast-delay log documenting a seventeen-second gap during her live statement.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A053",
+    "category": "Law and bureaucracy",
+    "asset": "Public cover page of Karlytta v. Varda et al.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A054",
+    "category": "Law and bureaucracy",
+    "asset": "Sealed exhibit index with descriptive titles visible but contents hidden.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A055",
+    "category": "Law and bureaucracy",
+    "asset": "Motion arguing that song lyrics are context rather than testimony.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A056",
+    "category": "Law and bureaucracy",
+    "asset": "Presidency's motion to dismiss on jurisdiction and limitation grounds.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A057",
+    "category": "Law and bureaucracy",
+    "asset": "Chain-of-custody form for the extended audio file.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A058",
+    "category": "Law and bureaucracy",
+    "asset": "Subpoena for RP Network edit decision lists.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A059",
+    "category": "Law and bureaucracy",
+    "asset": "Protective order covering medical records and private addresses.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A060",
+    "category": "Law and bureaucracy",
+    "asset": "Redacted travel manifest with the same passenger counted under two categories.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A061",
+    "category": "Law and bureaucracy",
+    "asset": "Security protocol defining a private performance as an official function.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A062",
+    "category": "Law and bureaucracy",
+    "asset": "Tax-audit opening letter sent one day after she refused a broadcast.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A063",
+    "category": "Law and bureaucracy",
+    "asset": "Trademark certificate for the doubled T in KARLYTTA.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A064",
+    "category": "Law and bureaucracy",
+    "asset": "Copyright ownership chart with three mutually exclusive claimants.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A065",
+    "category": "Fan culture",
+    "asset": "Fan-club newsletter apologizing for believing a tabloid story.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A066",
+    "category": "Fan culture",
+    "asset": "Spreadsheet of every time Karlytta said 'I'm fine' on camera.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A067",
+    "category": "Fan culture",
+    "asset": "Bootleg DVD menu designed like a hospital monitor.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A068",
+    "category": "Fan culture",
+    "asset": "Handmade concert bracelet later submitted as timestamp evidence.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A069",
+    "category": "Fan culture",
+    "asset": "Forum poll asking whether the extended track is authentic.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A070",
+    "category": "Fan culture",
+    "asset": "Guide to identifying real signatures from assistant-signed merchandise.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A071",
+    "category": "Fan culture",
+    "asset": "Map of murals that disappear after municipal cleaning campaigns.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A072",
+    "category": "Fan culture",
+    "asset": "Drag performance cue sheet translating her vocal gestures into choreography.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A073",
+    "category": "Fan culture",
+    "asset": "Fan memorial held for a cancelled album rather than a person.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A074",
+    "category": "Fan culture",
+    "asset": "Archive rule forbidding diagnosis of Karlytta from clips.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A075",
+    "category": "Fan culture",
+    "asset": "Children's talent-show costume pattern based on the KARLYTTA cover.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A076",
+    "category": "Fan culture",
+    "asset": "Thread documenting every ownership takedown against the same leak.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A077",
+    "category": "Political use",
+    "asset": "Campaign video using her chorus without vocal credits.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A078",
+    "category": "Political use",
+    "asset": "Parliamentary transcript where three parties quote the same lyric differently.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A079",
+    "category": "Political use",
+    "asset": "State reception menu naming a dessert after her without permission.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A080",
+    "category": "Political use",
+    "asset": "Photograph of a protest sign that supports her and insults her in the same sentence.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A081",
+    "category": "Political use",
+    "asset": "Police crowd estimate for a concert treated as an election forecast.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A082",
+    "category": "Political use",
+    "asset": "Ministry memo proposing her as a 'continuity voice' during emergency broadcasts.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A083",
+    "category": "Political use",
+    "asset": "Opposition poster that edits her mouth closed with a strip of flag.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A084",
+    "category": "Political use",
+    "asset": "Presidential speech praising her courage without naming the allegation.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A085",
+    "category": "Political use",
+    "asset": "Municipal permit denied because a tribute event is classified as political assembly.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A086",
+    "category": "Political use",
+    "asset": "Polling table measuring whether citizens believe Karlytta more than institutions.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A087",
+    "category": "Political use",
+    "asset": "Leaked briefing recommending that officials call her 'confused' rather than 'lying'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A088",
+    "category": "Political use",
+    "asset": "Archive deletion request justified as national-security housekeeping.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A089",
+    "category": "Health and the Doctor bridge",
+    "asset": "Clinic access log showing non-clinical users opening her file.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A090",
+    "category": "Health and the Doctor bridge",
+    "asset": "Appointment card with the specialty obscured by water damage.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A091",
+    "category": "Health and the Doctor bridge",
+    "asset": "Pharmacy bag visible in a paparazzi photograph but unreadable.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A092",
+    "category": "Health and the Doctor bridge",
+    "asset": "Consent form signed after the recorded procedure start time.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A093",
+    "category": "Health and the Doctor bridge",
+    "asset": "Voice-rest instruction later mocked in a television sketch.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A094",
+    "category": "Health and the Doctor bridge",
+    "asset": "Anonymous laboratory sample identifier appearing in a municipal procurement file.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A095",
+    "category": "Health and the Doctor bridge",
+    "asset": "Doctor's note stating only 'patient requests no public visitor'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A096",
+    "category": "Health and the Doctor bridge",
+    "asset": "Hospital corridor CCTV index with a missing eleven-minute interval.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A097",
+    "category": "Health and the Doctor bridge",
+    "asset": "Security call log describing a medical ward as a venue.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A098",
+    "category": "Health and the Doctor bridge",
+    "asset": "Insurance refusal framed as a publicity dispute.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A099",
+    "category": "Health and the Doctor bridge",
+    "asset": "One duplicate patient number linking two otherwise separate archives.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A100",
+    "category": "Health and the Doctor bridge",
+    "asset": "Main-game collectible: a discarded access badge whose owner watched NARODNA KUĆA during a night shift.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A101",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Three-hour special titled WE WILL NOT SPECULATE.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A102",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Confessional booth release form granting perpetual rights to distress.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A103",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Voting screen where 'believe her' is a paid option and 'wait for court' is free.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A104",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Host earpiece transcript directing when to hug a guest.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A105",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "House rules prohibiting discussion of pending litigation except during sponsored segments.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A106",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Weekly task requiring contestants to reenact a celebrity scandal.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A107",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Audience applause stem reused across incompatible emotional moments.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A108",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Producer board classifying guests as victim, villain, witness or weather.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A109",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Luxury-room camera map with one blind spot reserved for officials.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A110",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Charity telethon total that includes government advertising purchases.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A111",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Contestant diary describing the show as safer than ordinary housing.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A112",
+    "category": "Reality institution NARODNA KUĆA",
+    "asset": "Exit interview where a participant asks whether anything happened when cameras were off.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A113",
+    "category": "Career and high/low culture",
+    "asset": "FRIENDLY STAKES poker-table programme booklet.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A114",
+    "category": "Career and high/low culture",
+    "asset": "FORT UMBRALIS premiere ticket stamped TECHNICAL REVISION.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A115",
+    "category": "Career and high/low culture",
+    "asset": "MEMORIA MARIS opera-film libretto with Karlytta's handwritten cuts.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A116",
+    "category": "Career and high/low culture",
+    "asset": "ZRAKOPERKA emergency-broadcast cue sheet.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A117",
+    "category": "Career and high/low culture",
+    "asset": "THE KING rehearsal photograph where the crown is held by a stagehand.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A118",
+    "category": "Career and high/low culture",
+    "asset": "PIRATES opera customs declaration for a prop weapon shipment.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A119",
+    "category": "Career and high/low culture",
+    "asset": "ANESTEZIJA pharmacy-window promotional display.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A120",
+    "category": "Career and high/low culture",
+    "asset": "Academic conference panel titled 'Beyond Kitsch' that forgets to invite her.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A121",
+    "category": "Career and high/low culture",
+    "asset": "National prize rejection letter followed by a request that she perform at the ceremony.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A122",
+    "category": "Career and high/low culture",
+    "asset": "Conservatory syllabus using her song anonymously as an example of vocal processing.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A123",
+    "category": "Career and high/low culture",
+    "asset": "Jazz-club invoice proving FRIENDLY STAKES was recorded live.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A124",
+    "category": "Career and high/low culture",
+    "asset": "Museum label describing her costume more seriously than her authorship.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A125",
+    "category": "Commerce and material traces",
+    "asset": "Perfume sample called ONE HUNDRED SELVES.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A126",
+    "category": "Commerce and material traces",
+    "asset": "Counterfeit tour shirt with the lawsuit date printed years too early.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A127",
+    "category": "Commerce and material traces",
+    "asset": "Supermarket loyalty card promotion withdrawn after one afternoon.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A128",
+    "category": "Commerce and material traces",
+    "asset": "Phone-company commercial that turns 'Me no likey' into a customer-service slogan.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A129",
+    "category": "Commerce and material traces",
+    "asset": "Insurance advertisement using her face beside the phrase YOU ARE COVERED.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A130",
+    "category": "Commerce and material traces",
+    "asset": "Limited-edition ticket whose ink transfers onto skin.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A131",
+    "category": "Commerce and material traces",
+    "asset": "Hotel minibar bill with every item marked complimentary except water.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A132",
+    "category": "Commerce and material traces",
+    "asset": "Merchandise refund policy excluding 'changes in public meaning'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A133",
+    "category": "Commerce and material traces",
+    "asset": "Broken acrylic award repaired with visible office tape.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A134",
+    "category": "Commerce and material traces",
+    "asset": "Warehouse inventory of unsold dolls that speak only the male response line.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A135",
+    "category": "Commerce and material traces",
+    "asset": "Luxury-brand contract requiring her not to appear tired.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A136",
+    "category": "Commerce and material traces",
+    "asset": "Restaurant receipt where a security detail is billed as 'family'.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A137",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Empty archive folder whose index says it contains twelve files.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A138",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Press photograph with a person cropped out but their hand still visible.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A139",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Video whose audio begins seventeen seconds before the image.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A140",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Meeting minutes that skip from item four to item seven.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A141",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Two identical legal PDFs with different redactions.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A142",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Website cache showing a statement before its alleged writing time.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A143",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Deleted fan account quoted by official media after deletion.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A144",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Tour poster where a venue is replaced without changing the map.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A145",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Correction page that corrects nothing stated in the original article.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A146",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Transcript footnote referring to a question absent from the transcript.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A147",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Security badge record for a door that the building plan says does not exist.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A148",
+    "category": "Absence, deletion and contradiction",
+    "asset": "Mastering report signed by a technician who had left the company.",
+    "truth_status": "unassigned",
+    "source_bias": "to define",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link to at least one claim, one person and one other artifact."
+  },
+  {
+    "asset_id": "A149",
+    "category": "Childhood traces",
+    "asset": "stairwell ticket paid with a coat button",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A150",
+    "category": "Childhood traces",
+    "asset": "attendance ledger with broadcast-week absences",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A151",
+    "category": "Childhood traces",
+    "asset": "choir programme corrected by hand",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A152",
+    "category": "Childhood traces",
+    "asset": "municipal VHS label",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A153",
+    "category": "Childhood traces",
+    "asset": "radiator invoice from childhood block",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A154",
+    "category": "Childhood traces",
+    "asset": "class photograph cropped three ways",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A155",
+    "category": "Childhood traces",
+    "asset": "library card listing stagecraft and anatomy",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A156",
+    "category": "Childhood traces",
+    "asset": "teacher complaint about ticket sales",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A157",
+    "category": "Childhood traces",
+    "asset": "notebook ranking adults by room impact",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A158",
+    "category": "Childhood traces",
+    "asset": "cassette case signed by all but Karla",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A159",
+    "category": "Childhood traces",
+    "asset": "petition against fan tours",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A160",
+    "category": "Childhood traces",
+    "asset": "birthday invitation styled as press credential",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A161",
+    "category": "Childhood traces",
+    "asset": "winter electricity notice behind poster",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A162",
+    "category": "Childhood traces",
+    "asset": "returned button collection",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A163",
+    "category": "Childhood traces",
+    "asset": "school intercom announcement recorded over a song",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A164",
+    "category": "Studio bureaucracy",
+    "asset": "patch diagram with duplicate label",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A165",
+    "category": "Studio bureaucracy",
+    "asset": "mastering booking under foundation initials",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A166",
+    "category": "Studio bureaucracy",
+    "asset": "backup drive with replacement serial sticker",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A167",
+    "category": "Studio bureaucracy",
+    "asset": "autotune graph marked too adult",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A168",
+    "category": "Studio bureaucracy",
+    "asset": "comp sheet calling TAKE 8 STATE",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A169",
+    "category": "Studio bureaucracy",
+    "asset": "booth camera still with uncovered glass",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A170",
+    "category": "Studio bureaucracy",
+    "asset": "tea receipt after closing",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A171",
+    "category": "Studio bureaucracy",
+    "asset": "master courier envelope denied by label",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A172",
+    "category": "Studio bureaucracy",
+    "asset": "checksum printed before creation time due clock drift",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A173",
+    "category": "Studio bureaucracy",
+    "asset": "drive disposal certificate missing one device",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A174",
+    "category": "Studio bureaucracy",
+    "asset": "email asking whether GUIDE_M gets credit",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A175",
+    "category": "Studio bureaucracy",
+    "asset": "invoice for unnamed technical hour",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A176",
+    "category": "Studio bureaucracy",
+    "asset": "room tone with distant announcement",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A177",
+    "category": "Studio bureaucracy",
+    "asset": "torn note below full refusal",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A178",
+    "category": "Studio bureaucracy",
+    "asset": "metadata naming NIGHT export",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A179",
+    "category": "Broadcast manipulation",
+    "asset": "lower-third identity template",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A180",
+    "category": "Broadcast manipulation",
+    "asset": "applause stems by emotion",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A181",
+    "category": "Broadcast manipulation",
+    "asset": "edit list removing preceding question",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A182",
+    "category": "Broadcast manipulation",
+    "asset": "earpiece log MOVE TO HUMAN COST",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A183",
+    "category": "Broadcast manipulation",
+    "asset": "subtitle turning ne into da",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A184",
+    "category": "Broadcast manipulation",
+    "asset": "thumbnail tears/anger/silence test",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A185",
+    "category": "Broadcast manipulation",
+    "asset": "seventeen-second delay log",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A186",
+    "category": "Broadcast manipulation",
+    "asset": "correction scheduled in low-rated slot",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A187",
+    "category": "Broadcast manipulation",
+    "asset": "audience microphone limiter order",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A188",
+    "category": "Broadcast manipulation",
+    "asset": "balance memo by guest category",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A189",
+    "category": "Broadcast manipulation",
+    "asset": "clinic ad after privacy segment",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A190",
+    "category": "Broadcast manipulation",
+    "asset": "archive request denied as commercially active",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A191",
+    "category": "Broadcast manipulation",
+    "asset": "raw timecode under sponsor graphic",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A192",
+    "category": "Broadcast manipulation",
+    "asset": "release covering pre-interview talk",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A193",
+    "category": "Broadcast manipulation",
+    "asset": "emergency crawl covering final sentence",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A194",
+    "category": "Legal oddities",
+    "asset": "preservation receipt later denied",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A195",
+    "category": "Legal oddities",
+    "asset": "identical PDFs with different seals",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A196",
+    "category": "Legal oddities",
+    "asset": "evidence bag containing only hash",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A197",
+    "category": "Legal oddities",
+    "asset": "custody form repaired with tape",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A198",
+    "category": "Legal oddities",
+    "asset": "portal-shortened motion title",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A199",
+    "category": "Legal oddities",
+    "asset": "protective order leaking address in metadata",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A200",
+    "category": "Legal oddities",
+    "asset": "footnote to sealed question",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A201",
+    "category": "Legal oddities",
+    "asset": "index listing corridor photo as audio",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A202",
+    "category": "Legal oddities",
+    "asset": "clerk email about wrong version online",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A203",
+    "category": "Legal oddities",
+    "asset": "defence chart merging defendants",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A204",
+    "category": "Legal oddities",
+    "asset": "plaintiff timeline separating collaboration from consent",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A205",
+    "category": "Legal oddities",
+    "asset": "subpoena on obsolete disc",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A206",
+    "category": "Legal oddities",
+    "asset": "legal invoice for lyric review",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A207",
+    "category": "Legal oddities",
+    "asset": "judge note existence not authenticity",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A208",
+    "category": "Legal oddities",
+    "asset": "settlement offering access without ownership",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A209",
+    "category": "Reality show",
+    "asset": "paid vote with free neutral option",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A210",
+    "category": "Reality show",
+    "asset": "confessional release for perpetual distress",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A211",
+    "category": "Reality show",
+    "asset": "task reenacting scandal",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A212",
+    "category": "Reality show",
+    "asset": "producer board victim/villain/witness/weather",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A213",
+    "category": "Reality show",
+    "asset": "applause during legal caution",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A214",
+    "category": "Reality show",
+    "asset": "camera blind spot for officials",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A215",
+    "category": "Reality show",
+    "asset": "contestant diary calling compound safer than home",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A216",
+    "category": "Reality show",
+    "asset": "sponsor request for closure",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A217",
+    "category": "Reality show",
+    "asset": "exit interview about off-camera events",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A218",
+    "category": "Reality show",
+    "asset": "WE WILL NOT SPECULATE host mug",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A219",
+    "category": "Reality show",
+    "asset": "terms allowing vote grouping",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A220",
+    "category": "Reality show",
+    "asset": "poll corrected after air",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A221",
+    "category": "Reality show",
+    "asset": "wardrobe note less legally specific",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A222",
+    "category": "Reality show",
+    "asset": "audience reaction reuse release",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A223",
+    "category": "Reality show",
+    "asset": "segment extended for outrage retention",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A224",
+    "category": "Political administration",
+    "asset": "private dinner listed as cultural continuity",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A225",
+    "category": "Political administration",
+    "asset": "protocol note converting invitation into obligation",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A226",
+    "category": "Political administration",
+    "asset": "campaign license missing signature page",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A227",
+    "category": "Political administration",
+    "asset": "briefing recommends confused not lying",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A228",
+    "category": "Political administration",
+    "asset": "gift log calling jewelry state property",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A229",
+    "category": "Political administration",
+    "asset": "route change sent only to driver",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A230",
+    "category": "Political administration",
+    "asset": "solidarity concert permit classified commercial",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A231",
+    "category": "Political administration",
+    "asset": "parliament quotes same lyric three ways",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A232",
+    "category": "Political administration",
+    "asset": "grant scored before application",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A233",
+    "category": "Political administration",
+    "asset": "recruitment relabeled morale",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A234",
+    "category": "Political administration",
+    "asset": "speech praising courage without name",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A235",
+    "category": "Political administration",
+    "asset": "opposition uses image after removal request",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A236",
+    "category": "Political administration",
+    "asset": "tax file reactivated",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A237",
+    "category": "Political administration",
+    "asset": "belief poll by music taste",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A238",
+    "category": "Political administration",
+    "asset": "cabinet note asking if silence equals stability",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A239",
+    "category": "Medical privacy",
+    "asset": "clinic log with RP account",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A240",
+    "category": "Medical privacy",
+    "asset": "consent signed after procedure starts",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A241",
+    "category": "Medical privacy",
+    "asset": "water-damaged appointment specialty",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A242",
+    "category": "Medical privacy",
+    "asset": "visitor badge security liaison",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A243",
+    "category": "Medical privacy",
+    "asset": "lab result accessed without clinical role",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A244",
+    "category": "Medical privacy",
+    "asset": "duplicate patient number",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A245",
+    "category": "Medical privacy",
+    "asset": "voice-rest note reused in sketch",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A246",
+    "category": "Medical privacy",
+    "asset": "press photo of unreadable pharmacy bag",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A247",
+    "category": "Medical privacy",
+    "asset": "note requesting no public visitor",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A248",
+    "category": "Medical privacy",
+    "asset": "CCTV index missing eleven minutes",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A249",
+    "category": "Medical privacy",
+    "asset": "ward described as venue",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A250",
+    "category": "Medical privacy",
+    "asset": "audit cannot inspect screenshots",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A251",
+    "category": "Medical privacy",
+    "asset": "betting total on medicine box",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A252",
+    "category": "Medical privacy",
+    "asset": "ticket-stock printer paper",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A253",
+    "category": "Medical privacy",
+    "asset": "cabinet labeled PROTECTIVE ACCESS",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A254",
+    "category": "Fan culture",
+    "asset": "spreadsheet of every I am fine",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A255",
+    "category": "Fan culture",
+    "asset": "no diagnosis from clips rule",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A256",
+    "category": "Fan culture",
+    "asset": "bootleg DVD styled as patient monitor",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A257",
+    "category": "Fan culture",
+    "asset": "bracelet used for timestamp",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A258",
+    "category": "Fan culture",
+    "asset": "signature guide",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A259",
+    "category": "Fan culture",
+    "asset": "map of cleaned murals",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A260",
+    "category": "Fan culture",
+    "asset": "drag cue translating processing into movement",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A261",
+    "category": "Fan culture",
+    "asset": "memorial for cancelled album",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A262",
+    "category": "Fan culture",
+    "asset": "takedown-history thread",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A263",
+    "category": "Fan culture",
+    "asset": "transcript with uncertainty brackets",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A264",
+    "category": "Fan culture",
+    "asset": "archive mirrors with different deletions",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A265",
+    "category": "Fan culture",
+    "asset": "authenticity poll",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A266",
+    "category": "Fan culture",
+    "asset": "moderator rejects SHE TOLD YOU title",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A267",
+    "category": "Fan culture",
+    "asset": "essay defending meaningless pleasure",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A268",
+    "category": "Fan culture",
+    "asset": "fan apology for believing edit",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A269",
+    "category": "Commerce",
+    "asset": "one hundred selves perfume",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A270",
+    "category": "Commerce",
+    "asset": "Me no likey phone complaint campaign",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A271",
+    "category": "Commerce",
+    "asset": "YOU ARE COVERED insurance door poster",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A272",
+    "category": "Commerce",
+    "asset": "minibar where water is charged",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A273",
+    "category": "Commerce",
+    "asset": "contract forbidding visible fatigue",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A274",
+    "category": "Commerce",
+    "asset": "refund policy excluding changed meaning",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A275",
+    "category": "Commerce",
+    "asset": "doll playing only male response",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A276",
+    "category": "Commerce",
+    "asset": "shirt with early lawsuit date",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A277",
+    "category": "Commerce",
+    "asset": "supermarket campaign withdrawn in hours",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A278",
+    "category": "Commerce",
+    "asset": "ANESTEZIJA pharmacy display",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A279",
+    "category": "Commerce",
+    "asset": "ticket ink transferring to skin",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A280",
+    "category": "Commerce",
+    "asset": "award repaired with tape",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A281",
+    "category": "Commerce",
+    "asset": "state radio sold as merch",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A282",
+    "category": "Commerce",
+    "asset": "security billed as family",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A283",
+    "category": "Commerce",
+    "asset": "warehouse of national-daughter sashes",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A284",
+    "category": "Performance",
+    "asset": "seat map missing presidential box",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A285",
+    "category": "Performance",
+    "asset": "laminate excluding Blue Room 4",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A286",
+    "category": "Performance",
+    "asset": "set list with title crossed out",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A287",
+    "category": "Performance",
+    "asset": "promoter email locking corridor",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A288",
+    "category": "Performance",
+    "asset": "audience video after cut",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A289",
+    "category": "Performance",
+    "asset": "unapproved confetti sentence",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A290",
+    "category": "Performance",
+    "asset": "broken in-ear monitor",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A291",
+    "category": "Performance",
+    "asset": "key card in costume boot",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A292",
+    "category": "Performance",
+    "asset": "six-minute blackout cue",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A293",
+    "category": "Performance",
+    "asset": "weather warning on wristband",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A294",
+    "category": "Performance",
+    "asset": "fuel receipt outside official route",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A295",
+    "category": "Performance",
+    "asset": "continued performance not waiver clause",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A296",
+    "category": "Performance",
+    "asset": "empty chair by door",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A297",
+    "category": "Performance",
+    "asset": "official gift stored outside",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A298",
+    "category": "Performance",
+    "asset": "crew cake called luxury catering",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A299",
+    "category": "Deletions",
+    "asset": "empty folder indexed as twelve files",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A300",
+    "category": "Deletions",
+    "asset": "photo retaining cropped hand",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A301",
+    "category": "Deletions",
+    "asset": "audio beginning before image",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A302",
+    "category": "Deletions",
+    "asset": "minutes skipping items four to seven",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A303",
+    "category": "Deletions",
+    "asset": "cache predating statement",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A304",
+    "category": "Deletions",
+    "asset": "deleted fan quoted by state media",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A305",
+    "category": "Deletions",
+    "asset": "venue changed without map update",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A306",
+    "category": "Deletions",
+    "asset": "correction correcting nothing",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A307",
+    "category": "Deletions",
+    "asset": "footnote to absent question",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A308",
+    "category": "Deletions",
+    "asset": "badge for nonexistent door",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A309",
+    "category": "Deletions",
+    "asset": "report signed after technician left",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A310",
+    "category": "Deletions",
+    "asset": "black frame matching delay",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A311",
+    "category": "Deletions",
+    "asset": "empty costume mounts",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A312",
+    "category": "Deletions",
+    "asset": "broken hyperlink in exhibit",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A313",
+    "category": "Deletions",
+    "asset": "search result with title but no access reason",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A314",
+    "category": "Doctor echoes",
+    "asset": "waiting-room lawsuit lower-third",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A315",
+    "category": "Doctor echoes",
+    "asset": "patient misquotes lyric",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A316",
+    "category": "Doctor echoes",
+    "asset": "ticket establishing clinic date",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A317",
+    "category": "Doctor echoes",
+    "asset": "colleague calls case celebrity noise",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A318",
+    "category": "Doctor echoes",
+    "asset": "family knows scandal not evidence",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A319",
+    "category": "Doctor echoes",
+    "asset": "emergency drill uses ZRAKOPERKA",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A320",
+    "category": "Doctor echoes",
+    "asset": "audit shows Doctor credentials",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A321",
+    "category": "Doctor echoes",
+    "asset": "heating failure moves staff into corridor",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A322",
+    "category": "Doctor echoes",
+    "asset": "badge shared by clinic and broadcast inventory",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A323",
+    "category": "Doctor echoes",
+    "asset": "choice log preserves audit decision",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A324",
+    "category": "Doctor echoes",
+    "asset": "patient refuses correct medical explanation",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A325",
+    "category": "Doctor echoes",
+    "asset": "Doctor note mirrors lyric",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A326",
+    "category": "Doctor echoes",
+    "asset": "duplicate sample label",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A327",
+    "category": "Doctor echoes",
+    "asset": "privacy poster under camera",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  },
+  {
+    "asset_id": "A328",
+    "category": "Doctor echoes",
+    "asset": "printer jams on account name",
+    "truth_status": "unassigned",
+    "source_bias": "define custodian interest",
+    "game_relevance": "0 optional / 1 atmospheric / 2 thematic / 3 playable",
+    "production_state": "backlog",
+    "required_links": "Link one claim, person, location and contradiction."
+  }
+]

@@ -8,22 +8,21 @@ import { CharacterModelShowcase } from "@/components/character-model-showcase";
 import { ScreenshotGallery } from "@/components/screenshot-gallery";
 import { ShareButton } from "@/components/share-button";
 import { SiteFooter } from "@/components/site-footer";
-import { devlogs, findPost } from "@/lib/content";
+import { getDevlogPost, getDevlogPosts } from "@/lib/published-content";
 
-export function generateStaticParams() {
-  return devlogs.map((post) => ({ slug: post.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = findPost(slug);
+  const post = await getDevlogPost(slug);
   if (!post) return { title: "Transmission not found" };
   return { title: post.title, description: post.dek, openGraph: { images: [post.image] } };
 }
 
 export default async function DevlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = findPost(slug);
+  const devlogs = await getDevlogPosts();
+  const post = devlogs.find((candidate) => candidate.slug === slug) ?? await getDevlogPost(slug);
   if (!post) notFound();
   const index = devlogs.findIndex((candidate) => candidate.slug === post.slug);
   const next = devlogs[(index + 1) % devlogs.length];
@@ -38,8 +37,13 @@ export default async function DevlogPostPage({ params }: { params: Promise<{ slu
         <p>{post.dek}</p>
         <div className="article-status"><i /> {post.status.replace("-", " ")} / documented {post.date.toLowerCase()}</div>
       </header>
+      {post.headerImage && (
+        <div className="article-header-photo">
+          <Image src={post.headerImage} alt={`${post.title} header image`} fill priority sizes="100vw" style={{ objectPosition: post.headerPosition ?? "50% 50%" }} />
+        </div>
+      )}
       <div className="article-cover">
-        <Image src={post.image} alt={post.imageAlt} fill priority sizes="100vw" />
+        <Image src={post.image} alt={post.imageAlt} fill priority sizes="100vw" style={{ objectPosition: post.coverPosition ?? "50% 50%" }} />
         <span>{post.captureLabel ?? `PRODUCTION CAPTURE / BUILD ${post.build}`}</span>
       </div>
       {post.model && <CharacterModelShowcase model={post.model.url} pack={post.model.pack} obj={post.model.obj} name={post.model.name} />}
@@ -55,7 +59,7 @@ export default async function DevlogPostPage({ params }: { params: Promise<{ slu
           {post.body.map((section, sectionIndex) => (
             <section key={section.heading ?? `opening-${sectionIndex}`}>
               {section.heading && <h2>{section.heading}</h2>}
-              {section.paragraphs.map((paragraph, paragraphIndex) => <p className={sectionIndex === 0 && paragraphIndex === 0 ? "dropcap" : ""} key={`${sectionIndex}-${paragraphIndex}`}>{paragraph}</p>)}
+              {section.paragraphs.map((paragraph, paragraphIndex) => renderArticleBlock(paragraph, sectionIndex, paragraphIndex))}
             </section>
           ))}
           {post.code && (
@@ -82,4 +86,18 @@ export default async function DevlogPostPage({ params }: { params: Promise<{ slu
       <SiteFooter />
     </main>
   );
+}
+
+function renderArticleBlock(paragraph: string, sectionIndex: number, paragraphIndex: number) {
+  const image = paragraph.match(/^!\[(.*)\]\((.+)\)$/);
+  if (image) {
+    return (
+      <figure className="article-inline-image" key={`${sectionIndex}-${paragraphIndex}`}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- Markdown-authored body images can be local, blob-backed or remote. */}
+        <img src={image[2]} alt={image[1]} />
+        {image[1] && <figcaption>{image[1]}</figcaption>}
+      </figure>
+    );
+  }
+  return <p className={sectionIndex === 0 && paragraphIndex === 0 ? "dropcap" : ""} key={`${sectionIndex}-${paragraphIndex}`}>{paragraph}</p>;
 }

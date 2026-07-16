@@ -1,0 +1,642 @@
+[
+  {
+    "id": "P001",
+    "user": "user_0000",
+    "role": "fan",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 0,
+    "removed": true
+  },
+  {
+    "id": "P002",
+    "user": "user_7919",
+    "role": "lawyer",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 37,
+    "removed": false
+  },
+  {
+    "id": "P003",
+    "user": "user_5838",
+    "role": "nurse",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 74,
+    "removed": false
+  },
+  {
+    "id": "P004",
+    "user": "user_3757",
+    "role": "producer",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 111,
+    "removed": false
+  },
+  {
+    "id": "P005",
+    "user": "user_1676",
+    "role": "critic",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 148,
+    "removed": false
+  },
+  {
+    "id": "P006",
+    "user": "user_9595",
+    "role": "driver",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 185,
+    "removed": false
+  },
+  {
+    "id": "P007",
+    "user": "user_7514",
+    "role": "archivist",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 222,
+    "removed": false
+  },
+  {
+    "id": "P008",
+    "user": "user_5433",
+    "role": "fan",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 259,
+    "removed": false
+  },
+  {
+    "id": "P009",
+    "user": "user_3352",
+    "role": "lawyer",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 296,
+    "removed": false
+  },
+  {
+    "id": "P010",
+    "user": "user_1271",
+    "role": "nurse",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 333,
+    "removed": false
+  },
+  {
+    "id": "P011",
+    "user": "user_9190",
+    "role": "producer",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 370,
+    "removed": false
+  },
+  {
+    "id": "P012",
+    "user": "user_7109",
+    "role": "critic",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 407,
+    "removed": false
+  },
+  {
+    "id": "P013",
+    "user": "user_5028",
+    "role": "driver",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 444,
+    "removed": false
+  },
+  {
+    "id": "P014",
+    "user": "user_2947",
+    "role": "archivist",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 481,
+    "removed": false
+  },
+  {
+    "id": "P015",
+    "user": "user_0866",
+    "role": "fan",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 518,
+    "removed": false
+  },
+  {
+    "id": "P016",
+    "user": "user_8785",
+    "role": "lawyer",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 555,
+    "removed": false
+  },
+  {
+    "id": "P017",
+    "user": "user_6704",
+    "role": "nurse",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 592,
+    "removed": false
+  },
+  {
+    "id": "P018",
+    "user": "user_4623",
+    "role": "producer",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 629,
+    "removed": true
+  },
+  {
+    "id": "P019",
+    "user": "user_2542",
+    "role": "critic",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 666,
+    "removed": false
+  },
+  {
+    "id": "P020",
+    "user": "user_0461",
+    "role": "driver",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 703,
+    "removed": false
+  },
+  {
+    "id": "P021",
+    "user": "user_8380",
+    "role": "archivist",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 740,
+    "removed": false
+  },
+  {
+    "id": "P022",
+    "user": "user_6299",
+    "role": "fan",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 777,
+    "removed": false
+  },
+  {
+    "id": "P023",
+    "user": "user_4218",
+    "role": "lawyer",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 814,
+    "removed": false
+  },
+  {
+    "id": "P024",
+    "user": "user_2137",
+    "role": "nurse",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 851,
+    "removed": false
+  },
+  {
+    "id": "P025",
+    "user": "user_0056",
+    "role": "producer",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 888,
+    "removed": false
+  },
+  {
+    "id": "P026",
+    "user": "user_7975",
+    "role": "critic",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 925,
+    "removed": false
+  },
+  {
+    "id": "P027",
+    "user": "user_5894",
+    "role": "driver",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 15,
+    "removed": false
+  },
+  {
+    "id": "P028",
+    "user": "user_3813",
+    "role": "archivist",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 52,
+    "removed": false
+  },
+  {
+    "id": "P029",
+    "user": "user_1732",
+    "role": "fan",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 89,
+    "removed": false
+  },
+  {
+    "id": "P030",
+    "user": "user_9651",
+    "role": "lawyer",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 126,
+    "removed": false
+  },
+  {
+    "id": "P031",
+    "user": "user_7570",
+    "role": "nurse",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 163,
+    "removed": false
+  },
+  {
+    "id": "P032",
+    "user": "user_5489",
+    "role": "producer",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 200,
+    "removed": false
+  },
+  {
+    "id": "P033",
+    "user": "user_3408",
+    "role": "critic",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 237,
+    "removed": false
+  },
+  {
+    "id": "P034",
+    "user": "user_1327",
+    "role": "driver",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 274,
+    "removed": false
+  },
+  {
+    "id": "P035",
+    "user": "user_9246",
+    "role": "archivist",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 311,
+    "removed": true
+  },
+  {
+    "id": "P036",
+    "user": "user_7165",
+    "role": "fan",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 348,
+    "removed": false
+  },
+  {
+    "id": "P037",
+    "user": "user_5084",
+    "role": "lawyer",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 385,
+    "removed": false
+  },
+  {
+    "id": "P038",
+    "user": "user_3003",
+    "role": "nurse",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 422,
+    "removed": false
+  },
+  {
+    "id": "P039",
+    "user": "user_0922",
+    "role": "producer",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 459,
+    "removed": false
+  },
+  {
+    "id": "P040",
+    "user": "user_8841",
+    "role": "critic",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 496,
+    "removed": false
+  },
+  {
+    "id": "P041",
+    "user": "user_6760",
+    "role": "driver",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 533,
+    "removed": false
+  },
+  {
+    "id": "P042",
+    "user": "user_4679",
+    "role": "archivist",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 570,
+    "removed": false
+  },
+  {
+    "id": "P043",
+    "user": "user_2598",
+    "role": "fan",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 607,
+    "removed": false
+  },
+  {
+    "id": "P044",
+    "user": "user_0517",
+    "role": "lawyer",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 644,
+    "removed": false
+  },
+  {
+    "id": "P045",
+    "user": "user_8436",
+    "role": "nurse",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 681,
+    "removed": false
+  },
+  {
+    "id": "P046",
+    "user": "user_6355",
+    "role": "producer",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 718,
+    "removed": false
+  },
+  {
+    "id": "P047",
+    "user": "user_4274",
+    "role": "critic",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 755,
+    "removed": false
+  },
+  {
+    "id": "P048",
+    "user": "user_2193",
+    "role": "driver",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 792,
+    "removed": false
+  },
+  {
+    "id": "P049",
+    "user": "user_0112",
+    "role": "archivist",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 829,
+    "removed": false
+  },
+  {
+    "id": "P050",
+    "user": "user_8031",
+    "role": "fan",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 866,
+    "removed": false
+  },
+  {
+    "id": "P051",
+    "user": "user_5950",
+    "role": "lawyer",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 903,
+    "removed": false
+  },
+  {
+    "id": "P052",
+    "user": "user_3869",
+    "role": "nurse",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 940,
+    "removed": true
+  },
+  {
+    "id": "P053",
+    "user": "user_1788",
+    "role": "producer",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 30,
+    "removed": false
+  },
+  {
+    "id": "P054",
+    "user": "user_9707",
+    "role": "critic",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 67,
+    "removed": false
+  },
+  {
+    "id": "P055",
+    "user": "user_7626",
+    "role": "driver",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 104,
+    "removed": false
+  },
+  {
+    "id": "P056",
+    "user": "user_5545",
+    "role": "archivist",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 141,
+    "removed": false
+  },
+  {
+    "id": "P057",
+    "user": "user_3464",
+    "role": "fan",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 178,
+    "removed": false
+  },
+  {
+    "id": "P058",
+    "user": "user_1383",
+    "role": "lawyer",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 215,
+    "removed": false
+  },
+  {
+    "id": "P059",
+    "user": "user_9302",
+    "role": "nurse",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 252,
+    "removed": false
+  },
+  {
+    "id": "P060",
+    "user": "user_7221",
+    "role": "producer",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 289,
+    "removed": false
+  },
+  {
+    "id": "P061",
+    "user": "user_5140",
+    "role": "critic",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 326,
+    "removed": false
+  },
+  {
+    "id": "P062",
+    "user": "user_3059",
+    "role": "driver",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 363,
+    "removed": false
+  },
+  {
+    "id": "P063",
+    "user": "user_0978",
+    "role": "archivist",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 400,
+    "removed": false
+  },
+  {
+    "id": "P064",
+    "user": "user_8897",
+    "role": "fan",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 437,
+    "removed": false
+  },
+  {
+    "id": "P065",
+    "user": "user_6816",
+    "role": "lawyer",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 474,
+    "removed": false
+  },
+  {
+    "id": "P066",
+    "user": "user_4735",
+    "role": "nurse",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 511,
+    "removed": false
+  },
+  {
+    "id": "P067",
+    "user": "user_2654",
+    "role": "producer",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 548,
+    "removed": false
+  },
+  {
+    "id": "P068",
+    "user": "user_0573",
+    "role": "critic",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 585,
+    "removed": false
+  },
+  {
+    "id": "P069",
+    "user": "user_8492",
+    "role": "driver",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 622,
+    "removed": true
+  },
+  {
+    "id": "P070",
+    "user": "user_6411",
+    "role": "archivist",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 659,
+    "removed": false
+  },
+  {
+    "id": "P071",
+    "user": "user_4330",
+    "role": "fan",
+    "text": "The song did not become evidence. We became unable to pretend it was empty.",
+    "likes": 696,
+    "removed": false
+  },
+  {
+    "id": "P072",
+    "user": "user_2249",
+    "role": "lawyer",
+    "text": "A file can be authentic and still tell you nothing about the room.",
+    "likes": 733,
+    "removed": false
+  },
+  {
+    "id": "P073",
+    "user": "user_0168",
+    "role": "nurse",
+    "text": "Everybody asks why she returned. Nobody asks who owned the doors.",
+    "likes": 770,
+    "removed": false
+  },
+  {
+    "id": "P074",
+    "user": "user_8087",
+    "role": "producer",
+    "text": "I worked records. Non-clinical access is not a metaphor.",
+    "likes": 807,
+    "removed": false
+  },
+  {
+    "id": "P075",
+    "user": "user_6006",
+    "role": "critic",
+    "text": "She can be cruel and still be telling the truth.",
+    "likes": 844,
+    "removed": false
+  },
+  {
+    "id": "P076",
+    "user": "user_3925",
+    "role": "driver",
+    "text": "The low voice is a production choice. Production choices are still choices.",
+    "likes": 881,
+    "removed": false
+  },
+  {
+    "id": "P077",
+    "user": "user_1844",
+    "role": "archivist",
+    "text": "Please stop diagnosing a woman from compression artifacts.",
+    "likes": 918,
+    "removed": false
+  },
+  {
+    "id": "P078",
+    "user": "user_9763",
+    "role": "fan",
+    "text": "The court preserved the archive, not your favorite theory.",
+    "likes": 8,
+    "removed": false
+  },
+  {
+    "id": "P079",
+    "user": "user_7682",
+    "role": "lawyer",
+    "text": "We danced because it was good. Guilt is not analysis.",
+    "likes": 45,
+    "removed": false
+  },
+  {
+    "id": "P080",
+    "user": "user_5601",
+    "role": "nurse",
+    "text": "A country that calls someone daughter usually means property.",
+    "likes": 82,
+    "removed": false
+  }
+]

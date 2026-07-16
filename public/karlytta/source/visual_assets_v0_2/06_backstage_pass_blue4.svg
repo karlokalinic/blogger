@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500"><rect width="100%" height="100%" fill="#1f2c46"/>
+<rect x="55" y="55" width="890" height="1390" rx="42" fill="#f4eee8"/><rect x="55" y="55" width="890" height="280" rx="42" fill="#243d70"/>
+<text x="120" y="180" font-family="Arial" font-size="76" font-weight="900" fill="#ffffff">MEMORIA MARIS</text><text x="120" y="260" font-family="monospace" font-size="32" fill="#d8bd7d">TOUR ACCESS / 2018</text>
+<circle cx="500" cy="620" r="190" fill="#1f2c46"/><text x="350" y="650" font-family="Arial" font-size="110" font-weight="900" fill="#ffffff">KT</text>
+<text x="120" y="930" font-family="monospace" font-size="38" fill="#1d1b20">ACCESS: STAGE / DRESS / TRANSIT</text><text x="120" y="1010" font-family="monospace" font-size="38" fill="#a31d31">EXCLUDES: BLUE ROOM 4</text>
+<line x1="120" y1="1090" x2="880" y2="1090" stroke="#1d1b20" stroke-width="3" stroke-dasharray="20 14"/><text x="120" y="1190" font-family="Arial" font-size="34" fill="#1d1b20">Rear corridor must remain unlocked.</text><text x="120" y="1260" font-family="Arial" font-size="34" fill="#1d1b20">Route changes require dual confirmation.</text>
+</svg>

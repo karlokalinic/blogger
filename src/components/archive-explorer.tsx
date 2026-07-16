@@ -56,7 +56,7 @@ export function ArchiveExplorer({ entries }: { entries: ArchiveEntry[] }) {
           {filtered.map((entry, index) => (
             <Link className="archive-record" href={`/archive/${entry.slug}`} key={entry.slug}>
               <div className="record-image image-distort">
-                <Image src={entry.image} alt="" fill sizes="(max-width: 800px) 100vw, 33vw" />
+                <Image src={entry.image} alt="" fill sizes="(max-width: 800px) 100vw, 33vw" style={{ objectPosition: entry.imagePosition ?? "center" }} />
                 <span className={`record-status ${entry.status}`}>{entry.status}</span>
                 <span className="record-index">{String(index + 1).padStart(2, "0")}</span>
               </div>

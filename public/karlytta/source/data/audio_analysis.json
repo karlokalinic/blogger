@@ -1,0 +1,48 @@
+{
+  "analysis_note": "Tempo and key are computational estimates, not authorial metadata. Lyrical interpretation distinguishes author-confirmed fragments from speculation.",
+  "tracks": [
+    {
+      "id": "official",
+      "filename": "KARLOLEGEND - KARLYTTA(1).wav",
+      "duration_seconds": 297.205,
+      "duration_display": "4:57",
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "bit_depth": "PCM_16",
+      "estimated_tempo_bpm": 129.2,
+      "estimated_key": "F minor",
+      "key_confidence_correlation": 0.532,
+      "rms_mean": 0.3097,
+      "spectral_centroid_mean_hz": 4006.9,
+      "dynamic_range_proxy_db": 7.26,
+      "peak_amplitude": 0.8796,
+      "integrated_lufs": -7.9,
+      "loudness_range_lu": 1.8,
+      "true_peak_dbfs": -0.4
+    },
+    {
+      "id": "extended",
+      "filename": "karlytta extended(1).wav",
+      "duration_seconds": 306.08,
+      "duration_display": "5:06",
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "bit_depth": "PCM_32",
+      "estimated_tempo_bpm": 143.55,
+      "estimated_key": "F minor",
+      "key_confidence_correlation": 0.551,
+      "rms_mean": 0.3417,
+      "spectral_centroid_mean_hz": 3436.4,
+      "dynamic_range_proxy_db": 6.42,
+      "peak_amplitude": 0.9084,
+      "integrated_lufs": -7.8,
+      "loudness_range_lu": 2.1,
+      "true_peak_dbfs": -0.1
+    }
+  ],
+  "comparison": {
+    "duration_difference_seconds": 8.875,
+    "finding": "The extended file is not merely an appended outro. Coarse feature alignment indicates re-timing and rearrangement across the body of the track.",
+    "canonical_recommendation": "Treat the official release as the public record and the extended version as a disputed source document: KARLYTTA: NOĆNI ZAPIS."
+  }
+}

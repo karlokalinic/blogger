@@ -11,6 +11,7 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "public/merge-game/assets/**",
     "next-env.d.ts",
   ]),
 ]);

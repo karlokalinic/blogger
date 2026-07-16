@@ -341,6 +341,60 @@ export const archiveEntries: ArchiveEntry[] = [
 
 export const devlogs: DevlogPost[] = [
   {
+    slug: "karlytta-prudina-archive",
+    number: "LOG 034",
+    title: "KARLYTTA was always outside",
+    dek: "The local Prudina celebrity dossier is now a rendered archive: photos, audio objects, documents, evidence labels, poll data and the raw source package are live on Vercel.",
+    date: "16 JUL 2026",
+    readTime: "12 MIN",
+    category: "ARCHIVE DOSSIER",
+    image: "/karlytta/source/assets/karlytta_cover.jpg",
+    imageAlt: "KARLYTTA archive cover artwork",
+    captureLabel: "KARLYTTA / PRUDINA ARCHIVE / V0.2",
+    status: "implemented",
+    build: "0.5.0",
+    pinned: true,
+    facts: [
+      { label: "SOURCE FILES", value: "93" },
+      { label: "PUBLIC ASSETS", value: "13.5 MB" },
+      { label: "DOCS", value: "21 MD" },
+      { label: "ROUTE", value: "/karlytta" },
+    ],
+    gallery: [
+      { src: "/karlytta/source/visual_assets_v0_2/02_nocni_zapis_card.png", alt: "NOCNI ZAPIS disputed source card", caption: "The disputed longer file is treated as materially real but not self-authenticating. The archive keeps it useful and dangerous at the same time.", label: "01 / DISPUTED FILE" },
+      { src: "/karlytta/source/visual_assets_v0_2/03_court_filing_cover.png", alt: "Court filing cover artifact", caption: "The lawsuit layer keeps dates, preservation orders and exhibit status visible, so the celebrity myth cannot swallow the legal architecture.", label: "02 / FILING" },
+      { src: "/karlytta/source/visual_assets_v0_2/09_clinic_access_log.png", alt: "Clinic access log artifact", caption: "The required game bridge is small and administrative: a protected patient file opened by a non-clinical RP account.", label: "03 / DOCTOR BRIDGE" },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "KARLYTTA is the kind of figure a town thinks it already understands because everyone can quote something. That is exactly why the archive works. It does not ask whether Prudina heard her. It asks who was allowed to treat the hearing as information.",
+          "The route at /karlytta now turns the source package into a public dossier: the cover art, twelve visual props, two playable audio objects, waveform analysis, a career chronology, evidence classes, status-labeled claims, relationship maps, public opinion tables, social fragments and direct downloads for the raw documents, database, workbook and original static gallery.",
+        ],
+      },
+      {
+        heading: "The rule is status before spectacle",
+        paragraphs: [
+          "This is fictional in-world material, and it has to stay honest about uncertainty. The page does not flatten a civil complaint, a disputed audio file, a fan archive, a clinic audit and a public myth into the same kind of fact. Class A operational records sit beside Class C contested objects. Alleged claims remain alleged. Disputed material can be important without becoming proof by atmosphere.",
+          "That distinction is what makes the celebrity material useful to the broader Prudina world. Karlytta is not secretly the answer to every locked door. She is a pressure test for the town's institutions: broadcast, medicine, law, fan memory, emergency culture and the public habit of turning distress into format.",
+        ],
+      },
+      {
+        heading: "What shipped",
+        paragraphs: [
+          "The archive itself is served under /karlytta/source, so Vercel now hosts the markdown documents, JSON and CSV data, SQLite databases, workbook, audio, waveform images, SVG props, PNG previews and original static gallery. The rendered page gives visitors a designed way through it without hiding the raw files from production use.",
+          "Open /karlytta for the full dossier. The most important playable bridge remains intentionally narrow: the Doctor encounters a clinic access anomaly. He does not need to solve Karlytta, meet her or become the center of her story. He only needs to decide what care means when records know more than their creators meant to reveal.",
+        ],
+      },
+    ],
+    tryIt: [
+      "Open /karlytta and compare the public master against NOCNI ZAPIS with the waveform images visible.",
+      "Download the production tracker and sort the backlog by game relevance.",
+      "Read the reliability manual before treating any artifact as proof.",
+      "Use only the clinic access-log bridge as mandatory Doctor-game content.",
+    ],
+  },
+  {
     slug: "deni-doctor-first-downloadable-character",
     number: "LOG 033",
     title: "Deni is no longer trapped inside a screenshot",

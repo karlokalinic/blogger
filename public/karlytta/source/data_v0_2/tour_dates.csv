@@ -1,0 +1,37 @@
+date,city,venue,era,status,incident
+2005-02-12,Prudina,Civic Hall,PRVA,performed,none documented
+2005-06-21,Vezir,Fort Hall,PRVA,performed,rear corridor found locked
+2005-10-28,Orla,Memorial Theatre,STO LICA,cancelled,broadcast cut early
+2006-03-06,Greda,Winter Arena,STO LICA,rescheduled,weather warning printed on wristband
+2006-07-13,Marež,Rail Depot Stage,TUĐA SOBA,performed,official guest added after doors
+2006-11-19,Savaj,Civic Hall,TUĐA SOBA,performed,crew cake misreported as luxury catering
+2007-03-28,Kamen Grad,Fort Hall,FRIENDLY STAKES,cancelled,none documented
+2007-08-04,Lumen,Memorial Theatre,FRIENDLY STAKES,rescheduled,rear corridor found locked
+2007-12-11,Bela Luka,Winter Arena,NA UGOVOR I NA SAT,performed,broadcast cut early
+2008-04-18,Prudina,Rail Depot Stage,NA UGOVOR I NA SAT,performed,weather warning printed on wristband
+2008-08-25,Vezir,Civic Hall,SIGNAL NE POSTOJI,cancelled,official guest added after doors
+2009-01-01,Orla,Fort Hall,SIGNAL NE POSTOJI,rescheduled,crew cake misreported as luxury catering
+2009-05-10,Greda,Memorial Theatre,KARLYTTA,performed,none documented
+2009-09-16,Marež,Winter Arena,KARLYTTA,performed,rear corridor found locked
+2010-01-23,Savaj,Rail Depot Stage,KARLYTTA: NOĆNI ZAPIS,cancelled,broadcast cut early
+2010-06-01,Kamen Grad,Civic Hall,KARLYTTA: NOĆNI ZAPIS,rescheduled,weather warning printed on wristband
+2010-10-08,Lumen,Fort Hall,FORT UMBRALIS,performed,official guest added after doors
+2011-02-14,Bela Luka,Memorial Theatre,FORT UMBRALIS,performed,crew cake misreported as luxury catering
+2011-06-23,Prudina,Winter Arena,MEMORIA MARIS,cancelled,none documented
+2011-10-30,Vezir,Rail Depot Stage,MEMORIA MARIS,rescheduled,rear corridor found locked
+2012-03-07,Orla,Civic Hall,ZRAKOPERKA,performed,broadcast cut early
+2012-07-14,Greda,Fort Hall,ZRAKOPERKA,performed,weather warning printed on wristband
+2012-11-20,Marež,Memorial Theatre,NEMA PRIJENOSA,cancelled,official guest added after doors
+2013-03-29,Savaj,Winter Arena,NEMA PRIJENOSA,rescheduled,crew cake misreported as luxury catering
+2013-08-05,Kamen Grad,Rail Depot Stage,TI-KA-TAK,performed,none documented
+2013-12-12,Lumen,Civic Hall,TI-KA-TAK,performed,rear corridor found locked
+2014-04-20,Bela Luka,Fort Hall,ANESTEZIJA,cancelled,broadcast cut early
+2014-08-27,Prudina,Memorial Theatre,ANESTEZIJA,rescheduled,weather warning printed on wristband
+2015-01-03,Vezir,Winter Arena,JOŠ ME IMA,performed,official guest added after doors
+2015-05-12,Orla,Rail Depot Stage,JOŠ ME IMA,performed,crew cake misreported as luxury catering
+2015-09-18,Greda,Civic Hall,ARHITEKTURA USPONJENJA,cancelled,none documented
+2016-01-25,Marež,Fort Hall,ARHITEKTURA USPONJENJA,rescheduled,rear corridor found locked
+2016-06-02,Savaj,Memorial Theatre,SVE JE BILO VANI,performed,broadcast cut early
+2016-10-09,Kamen Grad,Winter Arena,SVE JE BILO VANI,performed,weather warning printed on wristband
+2017-02-15,Lumen,Rail Depot Stage,SVE JE BILO VANI,cancelled,official guest added after doors
+2017-06-24,Bela Luka,Civic Hall,SVE JE BILO VANI,rescheduled,crew cake misreported as luxury catering

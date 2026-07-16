@@ -1,0 +1,82 @@
+[
+  {
+    "id": "C01",
+    "claim": "Karlytta alleges that President Ognjen Varda sexually coerced her after a private state performance early in her career.",
+    "status": "alleged",
+    "source": "civil complaint",
+    "counterclaim": "Varda denies any private encounter outside official receptions.",
+    "dramatic_value": "The allegation is concrete; the surrounding system is larger than the single event."
+  },
+  {
+    "id": "C02",
+    "claim": "RP Network repeatedly turned Karlytta's refusals and distress into entertainment clips.",
+    "status": "partially documented",
+    "source": "broadcast archive and edit logs",
+    "counterclaim": "The network argues that she approved the broadcasts and profited from them.",
+    "dramatic_value": "Consent to publication is not identical to consent to the conditions that produced the material."
+  },
+  {
+    "id": "C03",
+    "claim": "The extended KARLYTTA session preserves direction lines removed from the public master.",
+    "status": "disputed",
+    "source": "anonymous 32-bit WAV and engineer testimony",
+    "counterclaim": "The producer calls it a fan reconstruction made from circulating stems.",
+    "dramatic_value": "The file is persuasive as atmosphere but difficult as courtroom proof."
+  },
+  {
+    "id": "C04",
+    "claim": "Karlytta's medical and travel records were used to pressure her into appearances.",
+    "status": "under seal",
+    "source": "filing schedule and missing-access logs",
+    "counterclaim": "The Presidency calls the records routine security coordination.",
+    "dramatic_value": "Bureaucratic normality becomes the language of coercion."
+  },
+  {
+    "id": "C05",
+    "claim": "The male authority in the song is a deliberate reenactment of coercive control.",
+    "status": "authorial interpretation",
+    "source": "Karlytta's later statement and recurring catalogue motifs",
+    "counterclaim": "Collaborators describe it as conventional club call-and-response.",
+    "dramatic_value": "The same formal device can be pleasure, parody, memory and violence."
+  },
+  {
+    "id": "C06",
+    "claim": "The public had already heard Karlytta describe the structure of the abuse through songs.",
+    "status": "cultural thesis",
+    "source": "retrospective criticism",
+    "counterclaim": "Lyrics are too ambiguous to function as notice or testimony.",
+    "dramatic_value": "The archive asks what society owes to speech it classified as entertainment."
+  },
+  {
+    "id": "C07",
+    "claim": "Karlytta leaked the extended version herself.",
+    "status": "unknown",
+    "source": "upload timing and a deleted post",
+    "counterclaim": "Her legal team says she did not possess that master.",
+    "dramatic_value": "Agency remains difficult to distinguish from forced self-exposure."
+  },
+  {
+    "id": "C08",
+    "claim": "The lawsuit is timed to destabilize the government.",
+    "status": "political framing",
+    "source": "RP Network commentary",
+    "counterclaim": "The filing predates the announced election calendar.",
+    "dramatic_value": "Power treats the timing of testimony as more important than its content."
+  },
+  {
+    "id": "C09",
+    "claim": "Karlytta's public instability was manufactured through selective editing.",
+    "status": "mixed",
+    "source": "raw footage comparisons",
+    "counterclaim": "Unedited footage also contains genuine volatility.",
+    "dramatic_value": "Victimhood does not require sainthood or perfect consistency."
+  },
+  {
+    "id": "C10",
+    "claim": "A clinic access record links the Presidency, RP Network and an unexplained medical episode.",
+    "status": "optional game bridge",
+    "source": "one administrative artifact",
+    "counterclaim": "No diagnosis is visible and the connection may be mundane.",
+    "dramatic_value": "This is the only bridge required between the Karlytta archive and the Doctor's main plot."
+  }
+]

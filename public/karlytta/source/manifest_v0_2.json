@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "documents": 15,
+  "media_articles": 10,
+  "new_assets": 180,
+  "total_assets": 328,
+  "data_files": 13,
+  "database": "db/karlytta_archive_v0_2.sqlite",
+  "svg_assets": 12,
+  "png_previews": 12,
+  "gallery": "site_v0_2/index.html",
+  "production_workbook": "KARLYTTA_PRODUCTION_TRACKER_v0_2.xlsx"
+}

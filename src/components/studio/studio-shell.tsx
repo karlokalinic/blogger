@@ -11,6 +11,7 @@ import {
   CircleHelp,
   FileText,
   Gauge,
+  Gamepad2,
   LayoutDashboard,
   Menu,
   Network,
@@ -39,6 +40,7 @@ const sections = [
     links: [
       ["/studio/media", "Media vault + 3D", UploadCloud],
       ["/studio/whiteboard", "World whiteboard", Network],
+      ["/merge-game", "Merge game", Gamepad2],
       ["/studio/check-in", "Private check-in", Sparkles],
     ],
   },

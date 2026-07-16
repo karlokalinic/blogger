@@ -1,0 +1,15 @@
+{
+  "project": "Slegnuće / Prudina Index",
+  "case": "KARLYTTA",
+  "version": "0.1",
+  "generated": "2026-07-15",
+  "files": {
+    "site": "index.html",
+    "database": "db/karlytta_archive.sqlite",
+    "canon": "documents/KARLYTTA_CANON_BIBLE.md",
+    "production_system": "documents/NARRATIVE_PRODUCTION_SYSTEM.md",
+    "audio_analysis": "data/audio_analysis.json",
+    "asset_backlog_count": 148
+  },
+  "fiction_rule": "Visible in-world materials do not name the real-world inspirations supplied as private context."
+}

@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element -- IndexedDB object URLs must stay local and bypass the image optimizer */
 
-import { Archive, Cloud, File, FileAudio, FileImage, FileVideo, Grid2X2, HardDrive, List, MoreHorizontal, Music2, Search, ShieldCheck, UploadCloud, X } from "lucide-react";
+import { Archive, Cloud, File, FileAudio, FileImage, FileVideo, Grid2X2, HardDrive, ImagePlus, List, MoreHorizontal, Music2, Pencil, RotateCw, Search, ShieldCheck, UploadCloud, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ModelInspector } from "./model-inspector";
 
@@ -40,6 +40,35 @@ export function MediaVault() {
   const removeFile = async (id: string) => {
     await deleteVaultFile(id);
     setFiles((current) => current.filter((file) => file.id !== id));
+  };
+
+  const renameFile = async (file: VaultFile) => {
+    const nextName = prompt("Rename asset", file.name)?.trim();
+    if (!nextName || nextName === file.name) return;
+    const updated = new Date().getTime();
+    await putVaultFile({ ...file, name: nextName, updated, url: undefined });
+    await loadFiles();
+  };
+
+  const sendToWhiteboard = async (file: VaultFile) => {
+    if (!categoryOf(file.type, file.name).startsWith("image")) return;
+    const form = new FormData();
+    form.set("file", new globalThis.File([file.blob], file.name, { type: file.type || "image/png" }));
+    const response = await fetch("/api/whiteboard/assets", { method: "POST", body: form });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      alert(payload.error || "Whiteboard database upload failed.");
+      return;
+    }
+    alert("Photo saved to the whiteboard database library.");
+  };
+
+  const rotateImageCopy = async (file: VaultFile) => {
+    if (categoryOf(file.type, file.name) !== "image") return;
+    const rotated = await rotateImageBlob(file.blob, file.type || "image/png");
+    const updated = new Date().getTime();
+    await putVaultFile({ id: crypto.randomUUID(), name: `rotated-${file.name}`, type: rotated.type, size: rotated.size, updated, blob: rotated });
+    await loadFiles();
   };
 
   const filtered = useMemo(() => files.filter((file) => {
@@ -82,7 +111,7 @@ export function MediaVault() {
           <div className="vault-count"><span>{filtered.length} ASSETS</span><i /> <span>SORT: NEWEST</span></div>
           {loading ? <div className="vault-empty">Reading local vault…</div> : filtered.length === 0 ? <div className="vault-empty"><Archive size={25} /><strong>{files.length ? "No assets match this view." : "The vault is empty."}</strong><span>Drop a file above. It stays available after refresh.</span></div> : (
             <div className={view === "grid" ? "vault-file-grid" : "vault-file-list"}>
-              {filtered.map((file) => <VaultFileCard key={file.id} file={file} onDelete={() => removeFile(file.id)} />)}
+              {filtered.map((file) => <VaultFileCard key={file.id} file={file} onDelete={() => removeFile(file.id)} onRename={() => renameFile(file)} onSendToWhiteboard={() => sendToWhiteboard(file)} onRotate={() => rotateImageCopy(file)} />)}
             </div>
           )}
         </section>
@@ -92,7 +121,7 @@ export function MediaVault() {
   );
 }
 
-function VaultFileCard({ file, onDelete }: { file: VaultFile; onDelete: () => void }) {
+function VaultFileCard({ file, onDelete, onRename, onSendToWhiteboard, onRotate }: { file: VaultFile; onDelete: () => void; onRename: () => void; onSendToWhiteboard: () => void; onRotate: () => void }) {
   const category = categoryOf(file.type, file.name);
   return (
     <article className="vault-file-card">
@@ -101,7 +130,12 @@ function VaultFileCard({ file, onDelete }: { file: VaultFile; onDelete: () => vo
         <span>{category.toUpperCase()}</span>
       </div>
       <div className="vault-file-info"><strong title={file.name}>{file.name}</strong><span>{formatBytes(file.size)} / {new Date(file.updated).toLocaleDateString()}</span></div>
-      <div className="file-menu"><button><MoreHorizontal size={14} /></button><div><a href={file.url} download={file.name}>Download original</a><button onClick={onDelete}>Remove from vault</button></div></div>
+      <div className="vault-quick-actions">
+        <button onClick={onRename}><Pencil size={11} /> Rename</button>
+        {category === "image" && <button className="send-board" onClick={onSendToWhiteboard}><ImagePlus size={11} /> Whiteboard</button>}
+        {category === "image" && <button onClick={onRotate}><RotateCw size={11} /> Rotate</button>}
+      </div>
+      <div className="file-menu"><button><MoreHorizontal size={14} /></button><div><a href={file.url} download={file.name}>Download original</a><button onClick={onRename}>Rename</button>{category === "image" && <button onClick={onRotate}>Rotate 90° copy</button>}{category === "image" && <button onClick={onSendToWhiteboard}>Send to whiteboard</button>}<button onClick={onDelete}>Remove from vault</button></div></div>
     </article>
   );
 }
@@ -173,4 +207,19 @@ async function deleteVaultFile(id: string) {
     transaction.onerror = () => reject(transaction.error);
   });
   db.close();
+}
+
+async function rotateImageBlob(blob: Blob, type: string) {
+  const bitmap = await createImageBitmap(blob);
+  const canvas = document.createElement("canvas");
+  canvas.width = bitmap.height;
+  canvas.height = bitmap.width;
+  const context = canvas.getContext("2d");
+  if (!context) throw new Error("Canvas is unavailable.");
+  context.translate(canvas.width / 2, canvas.height / 2);
+  context.rotate(Math.PI / 2);
+  context.drawImage(bitmap, -bitmap.width / 2, -bitmap.height / 2);
+  return new Promise<Blob>((resolve, reject) => {
+    canvas.toBlob((rotated) => rotated ? resolve(rotated) : reject(new Error("Could not rotate image.")), type);
+  });
 }

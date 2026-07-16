@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BookOpenText, Box, ImageIcon, Network, Plus, RadioTower, Users } from "lucide-react";
+import { ArrowRight, BookOpenText, Box, Gamepad2, ImageIcon, Network, Plus, RadioTower, Users } from "lucide-react";
 import { StudioDashboardClient } from "@/components/studio/studio-dashboard-client";
 import { archiveEntries, project, tasks } from "@/lib/content";
 
@@ -51,6 +51,7 @@ export default function StudioDashboardPage() {
         <Link href="/studio/write"><BookOpenText size={20} /><div><span>WRITE</span><strong>Open last draft</strong><small>Act I / Scene 04 / autosaved</small></div><ArrowRight size={14} /></Link>
         <Link href="/studio/catalogue"><Plus size={20} /><div><span>CATALOGUE</span><strong>Add anything</strong><small>Character, place, item, mission</small></div><ArrowRight size={14} /></Link>
         <Link href="/studio/whiteboard"><Network size={20} /><div><span>WHITEBOARD</span><strong>Make a mess</strong><small>7 notes / 3 loose connections</small></div><ArrowRight size={14} /></Link>
+        <Link href="/merge-game"><Gamepad2 size={20} /><div><span>MERGE GAME</span><strong>Play Prudina Restore</strong><small>Embedded from prudina-merge</small></div><ArrowRight size={14} /></Link>
       </section>
     </main>
   );

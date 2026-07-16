@@ -2,10 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Box, Eye, RadioTower, Sparkles } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
-import { archiveEntries, devlogs, project } from "@/lib/content";
+import { project } from "@/lib/content";
+import { getArchiveEntries, getDevlogPosts } from "@/lib/published-content";
 import { visualChapters } from "@/lib/visual-progress";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const [archiveEntries, devlogs] = await Promise.all([getArchiveEntries(), getDevlogPosts()]);
+  const featuredPost = devlogs[0];
+  const secondaryPosts = devlogs.slice(1, 3);
   return (
     <main>
       <section className="hero">
@@ -50,23 +56,23 @@ export default function HomePage() {
         </div>
 
         <div className="featured-log reveal-block">
-          <Link href={`/devlog/${devlogs[0].slug}`} className="featured-log-image image-distort">
-            <Image src={devlogs[0].image} alt={devlogs[0].imageAlt} fill sizes="(max-width: 900px) 100vw, 62vw" />
-            <span className="image-index">{devlogs[0].number.replace("LOG ", "")}</span>
+          <Link href={`/devlog/${featuredPost.slug}`} className="featured-log-image image-distort">
+            <Image src={featuredPost.image} alt={featuredPost.imageAlt} fill sizes="(max-width: 900px) 100vw, 62vw" style={{ objectPosition: featuredPost.coverPosition ?? "center" }} />
+            <span className="image-index">{featuredPost.number.replace("LOG ", "")}</span>
           </Link>
           <div className="featured-log-copy">
-            <div className="log-meta"><span>{devlogs[0].number}</span><span>{devlogs[0].date}</span><span>{devlogs[0].readTime}</span></div>
-            <h3><Link href={`/devlog/${devlogs[0].slug}`}>{devlogs[0].title}</Link></h3>
-            <p>{devlogs[0].dek}</p>
-            <Link href={`/devlog/${devlogs[0].slug}`} className="line-link">Open transmission <ArrowRight size={14} /></Link>
+            <div className="log-meta"><span>{featuredPost.number}</span><span>{featuredPost.date}</span><span>{featuredPost.readTime}</span></div>
+            <h3><Link href={`/devlog/${featuredPost.slug}`}>{featuredPost.title}</Link></h3>
+            <p>{featuredPost.dek}</p>
+            <Link href={`/devlog/${featuredPost.slug}`} className="line-link">Open transmission <ArrowRight size={14} /></Link>
           </div>
         </div>
 
         <div className="log-row">
-          {devlogs.slice(1, 3).map((post) => (
+          {secondaryPosts.map((post) => (
             <article className="log-card reveal-block" key={post.slug}>
               <Link href={`/devlog/${post.slug}`} className="log-card-image image-distort">
-                <Image src={post.image} alt={post.imageAlt} fill sizes="(max-width: 700px) 100vw, 45vw" />
+                <Image src={post.image} alt={post.imageAlt} fill sizes="(max-width: 700px) 100vw, 45vw" style={{ objectPosition: post.coverPosition ?? "center" }} />
                 {post.gallery && <span className="log-card-captures">{post.gallery.length} CAPTURES</span>}
               </Link>
               <div className="log-meta"><span>{post.number}</span><span>{post.category}</span><span>{post.date}</span></div>

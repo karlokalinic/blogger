@@ -1,0 +1,83 @@
+[
+  {
+    "id": "I01",
+    "name": "RP Network",
+    "type": "hybrid broadcaster",
+    "public": "news, entertainment, emergency communication",
+    "operational": "controls availability and timing",
+    "maintenance": "archive cooling failure",
+    "keyholder": "Veselin Trn"
+  },
+  {
+    "id": "I02",
+    "name": "NARODNA KUĆA",
+    "type": "reality institution",
+    "public": "entertainment and participation",
+    "operational": "public punishment and confession",
+    "maintenance": "permanent camera blind spot",
+    "keyholder": "Sonja Dravac"
+  },
+  {
+    "id": "I03",
+    "name": "Office of the President",
+    "type": "executive",
+    "public": "state leadership",
+    "operational": "private demands converted into protocol",
+    "maintenance": "incompatible access systems",
+    "keyholder": "Chief of Protocol"
+  },
+  {
+    "id": "I04",
+    "name": "Varda Cultural Foundation",
+    "type": "patronage body",
+    "public": "funding and prestige",
+    "operational": "rights consolidation and intermediary pressure",
+    "maintenance": "incomplete loan inventory",
+    "keyholder": "Registrar"
+  },
+  {
+    "id": "I05",
+    "name": "Central Civil Court",
+    "type": "court",
+    "public": "adjudication",
+    "operational": "procedural narrowing",
+    "maintenance": "audio channel dropout",
+    "keyholder": "Court Clerk"
+  },
+  {
+    "id": "I06",
+    "name": "Prudina Clinic Complex",
+    "type": "healthcare",
+    "public": "care",
+    "operational": "records crossing into media and security",
+    "maintenance": "partial digital migration",
+    "keyholder": "Records Supervisor"
+  },
+  {
+    "id": "I07",
+    "name": "Studio North",
+    "type": "recording facility",
+    "public": "music production",
+    "operational": "technical memory outside official narrative",
+    "maintenance": "handwritten legacy catalog",
+    "keyholder": "Facility Manager"
+  },
+  {
+    "id": "I08",
+    "name": "Ministry of Continuity",
+    "type": "emergency institution",
+    "public": "civil protection",
+    "operational": "merges morale, recruitment and commerce",
+    "maintenance": "cue revisions lack audit history",
+    "keyholder": "Broadcast Liaison"
+  },
+  {
+    "id": "I09",
+    "name": "Karlytta Index",
+    "type": "fan archive",
+    "public": "preservation",
+    "operational": "counter-memory and involuntary surveillance",
+    "maintenance": "mirrors disagree after removals",
+    "keyholder": "Mina Plevnik"
+  }
+]

@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
-import { archiveEntries, devlogs } from "@/lib/content";
+import { getArchiveEntries, getDevlogPosts } from "@/lib/published-content";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [archiveEntries, devlogs] = await Promise.all([getArchiveEntries(), getDevlogPosts()]);
   const base = "https://karlolegendblog.vercel.app";
-  const staticRoutes = ["", "/archive", "/devlog", "/captures", "/about", "/press", "/accessibility", "/privacy"];
+  const staticRoutes = ["", "/archive", "/devlog", "/karlytta", "/captures", "/merge-game", "/about", "/press", "/accessibility", "/privacy"];
   return [
     ...staticRoutes.map((route) => ({ url: `${base}${route}`, lastModified: new Date(), changeFrequency: route === "" ? "weekly" as const : "monthly" as const, priority: route === "" ? 1 : 0.7 })),
     ...archiveEntries.map((entry) => ({ url: `${base}/archive/${entry.slug}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.65 })),

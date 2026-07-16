@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { ArchiveExplorer } from "@/components/archive-explorer";
 import { SiteFooter } from "@/components/site-footer";
-import { archiveEntries } from "@/lib/content";
+import { getArchiveEntries } from "@/lib/published-content";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "World Archive",
   description: "Characters, locations, missions, items and field notes from VEO ZAVOD.",
 };
 
-export default function ArchivePage() {
+export default async function ArchivePage() {
+  const archiveEntries = await getArchiveEntries();
   return (
     <main className="inner-page archive-page">
       <header className="inner-hero section-shell">

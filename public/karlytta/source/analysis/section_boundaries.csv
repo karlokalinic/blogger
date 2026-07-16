@@ -1,0 +1,25 @@
+track,section,start_seconds,end_seconds,duration_seconds,mean_rms,mean_brightness_hz,status
+official,1,0.0,12.492,12.492,0.1568,4398.3,computational boundary; verify by ear
+official,2,12.492,19.435,6.943,0.2955,3695.3,computational boundary; verify by ear
+official,3,19.435,58.723,39.288,0.2909,4161.7,computational boundary; verify by ear
+official,4,58.723,63.39,4.667,0.2,4749.9,computational boundary; verify by ear
+official,5,63.39,167.509,104.118,0.3114,4142.6,computational boundary; verify by ear
+official,6,167.509,172.942,5.433,0.2222,4146.8,computational boundary; verify by ear
+official,7,172.942,239.119,66.177,0.3082,3837.2,computational boundary; verify by ear
+official,8,239.119,242.649,3.529,0.3695,3621.9,computational boundary; verify by ear
+official,9,242.649,279.29,36.641,0.296,3808.5,computational boundary; verify by ear
+official,10,279.29,284.003,4.714,0.2619,3512.8,computational boundary; verify by ear
+official,11,284.003,287.579,3.576,0.177,3991.8,computational boundary; verify by ear
+official,12,287.579,297.192,9.613,0.3064,3496.0,computational boundary; verify by ear
+extended,1,0.0,3.46,3.46,0.1441,4246.3,computational boundary; verify by ear
+extended,2,3.46,19.946,16.486,0.2487,3454.6,computational boundary; verify by ear
+extended,3,19.946,103.073,83.127,0.3269,3493.2,computational boundary; verify by ear
+extended,4,103.073,108.507,5.433,0.1836,3877.8,computational boundary; verify by ear
+extended,5,108.507,128.731,20.225,0.359,3495.0,computational boundary; verify by ear
+extended,6,128.731,131.146,2.415,0.1765,4230.4,computational boundary; verify by ear
+extended,7,131.146,144.823,13.677,0.3691,3317.8,computational boundary; verify by ear
+extended,8,144.823,146.309,1.486,0.2336,4017.1,computational boundary; verify by ear
+extended,9,146.309,180.558,34.249,0.3263,3501.0,computational boundary; verify by ear
+extended,10,180.558,183.74,3.181,0.183,4555.1,computational boundary; verify by ear
+extended,11,183.74,201.805,18.065,0.3858,3598.4,computational boundary; verify by ear
+extended,12,201.805,306.062,104.258,0.3456,3232.4,computational boundary; verify by ear

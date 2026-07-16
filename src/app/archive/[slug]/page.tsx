@@ -4,15 +4,13 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, GitBranch } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/site-footer";
-import { archiveEntries, findEntry } from "@/lib/content";
+import { getArchiveEntries, getArchiveEntry } from "@/lib/published-content";
 
-export function generateStaticParams() {
-  return archiveEntries.map((entry) => ({ slug: entry.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const entry = findEntry(slug);
+  const entry = await getArchiveEntry(slug);
   if (!entry) return { title: "Record not found" };
   return {
     title: entry.title,
@@ -23,7 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ArchiveEntryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const entry = findEntry(slug);
+  const archiveEntries = await getArchiveEntries();
+  const entry = archiveEntries.find((candidate) => candidate.slug === slug) ?? await getArchiveEntry(slug);
   if (!entry) notFound();
   const index = archiveEntries.findIndex((candidate) => candidate.slug === entry.slug);
   const next = archiveEntries[(index + 1) % archiveEntries.length];
@@ -32,7 +31,7 @@ export default async function ArchiveEntryPage({ params }: { params: Promise<{ s
     <main className="record-page">
       <section className="record-hero">
         <div className="record-hero-image">
-          <Image src={entry.image} alt={`${entry.title} archive image`} fill priority sizes="(max-width: 900px) 100vw, 55vw" />
+          <Image src={entry.image} alt={`${entry.title} archive image`} fill priority sizes="(max-width: 900px) 100vw, 55vw" style={{ objectPosition: entry.imagePosition ?? "50% 50%" }} />
           <div className="record-image-overlay" />
           <span className="record-frame-label">ARCHIVE FRAME / {String(index + 1).padStart(4, "0")}</span>
         </div>

@@ -1,0 +1,138 @@
+[
+  {
+    "year": 2004,
+    "title": "PRVA",
+    "type": "single",
+    "genre": "electro-folk",
+    "status": "official",
+    "motifs": "firstness|ambition|abandonment"
+  },
+  {
+    "year": 2006,
+    "title": "STO LICA",
+    "type": "album",
+    "genre": "pop",
+    "status": "official",
+    "motifs": "multiplication|mirrors|celebrity"
+  },
+  {
+    "year": 2009,
+    "title": "TUĐA SOBA",
+    "type": "album",
+    "genre": "electronic folk",
+    "status": "official",
+    "motifs": "rooms|access|privacy"
+  },
+  {
+    "year": 2011,
+    "title": "FRIENDLY STAKES",
+    "type": "television album",
+    "genre": "jazz-pop",
+    "status": "official",
+    "motifs": "games|class|risk"
+  },
+  {
+    "year": 2012,
+    "title": "NA UGOVOR I NA SAT",
+    "type": "single",
+    "genre": "industrial pop",
+    "status": "official",
+    "motifs": "contracts|labor|time"
+  },
+  {
+    "year": 2013,
+    "title": "SIGNAL NE POSTOJI",
+    "type": "single",
+    "genre": "electronic",
+    "status": "official",
+    "motifs": "signals|silence|failure"
+  },
+  {
+    "year": 2014,
+    "title": "KARLYTTA",
+    "type": "single",
+    "genre": "club experimental",
+    "status": "official",
+    "motifs": "name|refusal|authority"
+  },
+  {
+    "year": 2014,
+    "title": "KARLYTTA: NOĆNI ZAPIS",
+    "type": "alternate file",
+    "genre": "club experimental",
+    "status": "disputed",
+    "motifs": "cuts|ownership|guide voice"
+  },
+  {
+    "year": 2016,
+    "title": "FORT UMBRALIS",
+    "type": "stage work",
+    "genre": "symphonic electronic",
+    "status": "withdrawn",
+    "motifs": "walls|protection|exit"
+  },
+  {
+    "year": 2018,
+    "title": "MEMORIA MARIS",
+    "type": "opera-film",
+    "genre": "opera electronic",
+    "status": "official",
+    "motifs": "sea|memory|mourning"
+  },
+  {
+    "year": 2020,
+    "title": "ZRAKOPERKA",
+    "type": "album",
+    "genre": "futurist pop",
+    "status": "relicensed",
+    "motifs": "war|transport|body"
+  },
+  {
+    "year": 2022,
+    "title": "NEMA PRIJENOSA",
+    "type": "single",
+    "genre": "minimal electronic",
+    "status": "official",
+    "motifs": "broadcast|absence|silence"
+  },
+  {
+    "year": 2023,
+    "title": "TI-KA-TAK",
+    "type": "single",
+    "genre": "hardstyle",
+    "status": "official",
+    "motifs": "time|compulsion|detonation"
+  },
+  {
+    "year": 2024,
+    "title": "ANESTEZIJA",
+    "type": "album",
+    "genre": "clinical pop",
+    "status": "official",
+    "motifs": "medicine|consent|body"
+  },
+  {
+    "year": 2025,
+    "title": "JOŠ ME IMA",
+    "type": "single",
+    "genre": "anthem",
+    "status": "official",
+    "motifs": "survival|quantity|prayer"
+  },
+  {
+    "year": 2025,
+    "title": "ARHITEKTURA USPONJENJA",
+    "type": "stage cycle",
+    "genre": "experimental",
+    "status": "official",
+    "motifs": "stairs|hierarchy|meaning"
+  },
+  {
+    "year": 2026,
+    "title": "SVE JE BILO VANI",
+    "type": "unreleased",
+    "genre": "unknown",
+    "status": "announced",
+    "motifs": "testimony|memory|listening"
+  }
+]

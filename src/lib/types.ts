@@ -8,6 +8,7 @@ export type ArchiveEntry = {
   summary: string;
   description: string[];
   image: string;
+  imagePosition?: string;
   status: "canon" | "draft" | "cut";
   progress: number;
   tags: string[];
@@ -26,10 +27,14 @@ export type DevlogPost = {
   readTime: string;
   category: string;
   image: string;
+  coverPosition?: string;
+  headerImage?: string;
+  headerPosition?: string;
   imageAlt: string;
   captureLabel?: string;
   status: "prototype" | "implemented" | "testing" | "design-note";
   build: string;
+  pinned?: boolean;
   gallery?: DevlogShot[];
   model?: {
     url: string;

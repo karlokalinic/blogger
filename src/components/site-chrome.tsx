@@ -13,6 +13,8 @@ const links = [
   ["/", "Signal"],
   ["/archive", "World archive"],
   ["/devlog", "Devlog"],
+  ["/karlytta", "Karlytta"],
+  ["/merge-game", "Merge game"],
   ["/captures", "Captures"],
   ["/about", "About"],
 ] as const;
@@ -21,13 +23,14 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const inStudio = pathname.startsWith("/studio");
+  const inGame = pathname.startsWith("/merge-game");
 
   return (
-    <div className={inStudio ? "site-shell is-studio" : "site-shell"}>
-      <Atmosphere />
+    <div className={inStudio ? "site-shell is-studio" : inGame ? "site-shell is-game" : "site-shell"}>
+      <Atmosphere particles={!inGame} />
       <RevealObserver />
-      <div className="noise-layer" aria-hidden="true" />
-      {!inStudio && (
+      {!inGame && <div className="noise-layer" aria-hidden="true" />}
+      {!inStudio && !inGame && (
         <header className="site-header">
           <Link href="/" className="wordmark" aria-label="VEO ZAVOD home">
             <span className="wordmark-sigil" aria-hidden="true"><Radio size={15} /></span>
@@ -63,7 +66,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         </header>
       )}
       <div id="main-content">{children}</div>
-      {!inStudio && <SignalAudioDock />}
+      {!inStudio && !inGame && <SignalAudioDock />}
     </div>
   );
 }

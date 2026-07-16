@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><rect width="100%" height="100%" fill="#08080b"/>
+<rect x="60" y="60" width="1080" height="1080" fill="#121019" stroke="#d8bd7d" stroke-width="3"/>
+<text x="105" y="175" font-family="monospace" font-size="28" fill="#d8bd7d">UNVERIFIED AUDIO OBJECT / COPY 03</text>
+<text x="105" y="335" font-family="Arial" font-size="102" font-weight="900" fill="#ff2f8b">NOĆNI</text>
+<text x="105" y="445" font-family="Arial" font-size="102" font-weight="900" fill="#f5eef3">ZAPIS</text>
+<text x="105" y="545" font-family="monospace" font-size="32" fill="#b6aab5">32-BIT PCM • 44.1 kHz • 05:06.080</text>
+<rect x="105" y="625" width="900" height="180" fill="#07070a" stroke="#ff2f8b"/>
+<path d="M120 715 L180 680 L230 760 L290 630 L350 735 L410 690 L470 770 L530 610 L590 720 L650 675 L710 750 L770 640 L830 710 L900 665 L990 725" fill="none" stroke="#ff2f8b" stroke-width="8"/>
+<text x="105" y="910" font-family="Georgia" font-size="42" fill="#f5eef3">“The one you know was shortened.”</text>
+<text x="105" y="1030" font-family="monospace" font-size="24" fill="#6f6570">AUTHENTICITY: DISPUTED / EXISTENCE: CONFIRMED</text>
+</svg>

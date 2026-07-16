@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { DevlogFeed } from "@/components/devlog-feed";
 import { SiteFooter } from "@/components/site-footer";
-import { devlogs } from "@/lib/content";
+import { getDevlogPosts } from "@/lib/published-content";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = { title: "Development Log", description: "Production notes from VEO ZAVOD." };
 
-export default function DevlogPage() {
+export default async function DevlogPage() {
+  const devlogs = await getDevlogPosts();
   return (
     <main className="inner-page devlog-index">
       <header className="inner-hero section-shell">

@@ -1,5 +1,6 @@
 import { isStudioAuthenticated } from "@/lib/auth";
 import { getSql, databaseConfigured } from "@/lib/db";
+import { ensureWhiteboardTables } from "@/lib/whiteboard-db";
 
 export async function POST() {
   if (!(await isStudioAuthenticated())) return Response.json({ error: "Unauthorized" }, { status: 401 });
@@ -20,6 +21,7 @@ export async function POST() {
       tags JSONB NOT NULL DEFAULT '[]'::jsonb,
       connections JSONB NOT NULL DEFAULT '[]'::jsonb,
       image_url TEXT,
+      image_position TEXT NOT NULL DEFAULT '50% 50%',
       published BOOLEAN NOT NULL DEFAULT false,
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -34,10 +36,38 @@ export async function POST() {
       body TEXT NOT NULL DEFAULT '',
       visibility TEXT NOT NULL DEFAULT 'private',
       cover_url TEXT,
+      cover_position TEXT NOT NULL DEFAULT '50% 50%',
+      header_url TEXT,
+      header_position TEXT NOT NULL DEFAULT '50% 50%',
+      category TEXT NOT NULL DEFAULT 'STUDIO POST',
+      status TEXT NOT NULL DEFAULT 'implemented',
+      build TEXT NOT NULL DEFAULT '0.4.9',
+      read_time TEXT NOT NULL DEFAULT '',
+      images JSONB NOT NULL DEFAULT '[]'::jsonb,
+      pinned BOOLEAN NOT NULL DEFAULT false,
       published_at TIMESTAMPTZ,
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
   `;
-  return Response.json({ ok: true, tables: ["archive_records", "devlog_posts"] });
+  await sql`ALTER TABLE archive_records ADD COLUMN IF NOT EXISTS image_position TEXT NOT NULL DEFAULT '50% 50%'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS cover_position TEXT NOT NULL DEFAULT '50% 50%'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS header_url TEXT`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS header_position TEXT NOT NULL DEFAULT '50% 50%'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS category TEXT NOT NULL DEFAULT 'STUDIO POST'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'implemented'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS build TEXT NOT NULL DEFAULT '0.4.9'`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS read_time TEXT NOT NULL DEFAULT ''`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS images JSONB NOT NULL DEFAULT '[]'::jsonb`;
+  await sql`ALTER TABLE devlog_posts ADD COLUMN IF NOT EXISTS pinned BOOLEAN NOT NULL DEFAULT false`;
+  await ensureWhiteboardTables(sql);
+  await sql`
+    CREATE TABLE IF NOT EXISTS prudina_restore_saves (
+      save_key TEXT PRIMARY KEY,
+      state JSONB NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `;
+  return Response.json({ ok: true, tables: ["archive_records", "devlog_posts", "whiteboard_boards", "whiteboard_assets", "prudina_restore_saves"], migrated: true });
 }

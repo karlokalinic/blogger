@@ -1,0 +1,115 @@
+[
+  {
+    "id": "karlytta",
+    "name": "Karlytta",
+    "legal_name": "Karla Vita Lukan",
+    "role": "Singer, public symbol, plaintiff",
+    "public_voice": "Absolute certainty, theatrical generosity, rapid reversals, jokes that arrive half a second before pain.",
+    "private_pressure": "She cannot prove which parts of her persona were chosen freely because the persona is also how she survived.",
+    "archive_function": "Every source projects a different country onto her."
+  },
+  {
+    "id": "ognjen-varda",
+    "name": "Ognjen Varda",
+    "role": "President of the Republic; named defendant",
+    "public_voice": "Measured paternal language. Never answers the allegation in the grammatical form in which it was made.",
+    "private_pressure": "His authority depends on appearing to have no private life at all.",
+    "archive_function": "He turns allegations into questions of national stability."
+  },
+  {
+    "id": "sonja-dravac",
+    "name": "Sonja Dravac",
+    "role": "Host of the reality institution NARODNA KUĆA",
+    "public_voice": "Maternal intimacy weaponized as scheduling.",
+    "private_pressure": "She knows the show has replaced courts, parliament and mourning rituals for much of the public.",
+    "archive_function": "She can make anything feel resolved by ending a segment."
+  },
+  {
+    "id": "veselin-trn",
+    "name": "Veselin Trn",
+    "role": "Director-General of RP Network",
+    "public_voice": "Technical neutrality, ratings language, legal disclaimers.",
+    "private_pressure": "His archive contains cuts that contradict the network's official memory.",
+    "archive_function": "He controls not truth but availability."
+  },
+  {
+    "id": "lea-pazic",
+    "name": "Lea Pažić",
+    "role": "Karlytta's civil attorney",
+    "public_voice": "Exact, non-poetic, visibly irritated when songs are treated as depositions.",
+    "private_pressure": "She needs the culture around the case without allowing culture to replace evidence.",
+    "archive_function": "She separates legal proof from social recognition."
+  },
+  {
+    "id": "ilija-vren",
+    "name": "Dr. Ilija Vren",
+    "role": "Literary critic who dismissed Karlytta for twenty years",
+    "public_voice": "Elegant contempt slowly mutating into embarrassed attention.",
+    "private_pressure": "His authority rests on a hierarchy of art that Karlytta's popularity has already defeated.",
+    "archive_function": "He demonstrates how institutions rename prejudice as standards."
+  },
+  {
+    "id": "marta-orel",
+    "name": "Marta Orel",
+    "role": "National opera singer and occasional collaborator",
+    "public_voice": "Formal, disciplined, refuses the language of rivalry.",
+    "private_pressure": "She envies Karlytta's reach and fears Karlytta envies her permission to be taken seriously.",
+    "archive_function": "She destabilizes the border between elite and popular culture."
+  },
+  {
+    "id": "nika-rime",
+    "name": "Nika Rime",
+    "role": "Younger pop rival",
+    "public_voice": "Internet-fluent sincerity with carefully engineered accidents.",
+    "private_pressure": "She grew up imitating Karlytta and was marketed as her replacement.",
+    "archive_function": "She reveals how the industry recycles rebellion."
+  },
+  {
+    "id": "dorian-belic",
+    "name": "Dorian Belić",
+    "role": "Producer of the official KARLYTTA sessions",
+    "public_voice": "Everything was ordinary studio practice.",
+    "private_pressure": "He remembers which direction lines were kept in the extended session.",
+    "archive_function": "He makes technical decisions ethically legible."
+  },
+  {
+    "id": "sven-rasto",
+    "name": "Sven Rasto",
+    "role": "Former vocal engineer",
+    "public_voice": "Nervous precision; speaks in channel numbers and timestamps.",
+    "private_pressure": "He copied one multitrack session before the archive was consolidated.",
+    "archive_function": "He is useful but not automatically trustworthy."
+  },
+  {
+    "id": "mina-plevnik",
+    "name": "Mina Plevnik",
+    "role": "Fan archivist and administrator of the unofficial Karlytta Index",
+    "public_voice": "Meticulous, defensive, embarrassingly knowledgeable.",
+    "private_pressure": "Her identity is built around noticing what institutions ignore.",
+    "archive_function": "She preserves trivialities that later become evidence."
+  },
+  {
+    "id": "tomislav-ardan",
+    "name": "Tomislav Ardan",
+    "role": "Constitutional lawyer and television regular",
+    "public_voice": "Explains power as procedure until procedure begins to sound violent.",
+    "private_pressure": "He is paid by the network he critiques.",
+    "archive_function": "He shows how intelligent commentary can stabilize the system it describes."
+  },
+  {
+    "id": "rade-vran",
+    "name": "Rade Vran",
+    "role": "Former security coordinator",
+    "public_voice": "Short declarative sentences and selective amnesia.",
+    "private_pressure": "He once changed a route because Karlytta asked not to be alone with a senior official.",
+    "archive_function": "His mundane logistics carry more weight than his opinions."
+  },
+  {
+    "id": "the-doctor",
+    "name": "The Doctor",
+    "role": "Game protagonist; peripheral witness to the media storm",
+    "public_voice": "Clinical restraint and increasingly unreliable self-command.",
+    "private_pressure": "He wants mastery over death, illness, family and himself, and therefore mistakes control for care.",
+    "archive_function": "Karlytta remains optional world texture until one medical record crosses his path."
+  }
+]

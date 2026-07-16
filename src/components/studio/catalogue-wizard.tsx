@@ -9,6 +9,7 @@ import {
   Check,
   FileQuestion,
   ImagePlus,
+  LoaderCircle,
   Map,
   Package,
   Save,
@@ -34,9 +35,10 @@ type Draft = {
   tags: string[];
   connections: string[];
   image: string;
+  imagePosition: string;
 };
 
-const initialDraft: Draft = { type: "character", title: "", slug: "", summary: "", status: "draft", description: "", role: "", need: "", contradiction: "", tags: [], connections: [], image: "" };
+const initialDraft: Draft = { type: "character", title: "", slug: "", summary: "", status: "draft", description: "", role: "", need: "", contradiction: "", tags: [], connections: [], image: "", imagePosition: "50% 50%" };
 
 const types = [
   ["character", "Character", "A person, witness, rival or absence.", UserRound],
@@ -55,6 +57,9 @@ export function CatalogueWizard() {
   const [tagInput, setTagInput] = useState("");
   const [connectionInput, setConnectionInput] = useState("");
   const [published, setPublished] = useState(false);
+  const [publishing, setPublishing] = useState(false);
+  const [publishError, setPublishError] = useState("");
+  const [imageFile, setImageFile] = useState<File | null>(null);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -86,26 +91,58 @@ export function CatalogueWizard() {
 
   const chooseImage = (file?: File) => {
     if (!file || !file.type.startsWith("image/")) return;
+    setImageFile(file);
     const reader = new FileReader();
     reader.onload = () => set("image", String(reader.result));
     reader.readAsDataURL(file);
   };
 
-  const publish = () => {
-    const existing = JSON.parse(window.localStorage.getItem("veo-local-records") || "[]") as Draft[];
+  const publish = async () => {
+    setPublishing(true);
+    setPublishError("");
     const final = { ...draft, slug: draft.slug || slugify(draft.title) };
-    window.localStorage.setItem("veo-local-records", JSON.stringify([...existing.filter((item) => item.slug !== final.slug), final]));
-    window.localStorage.removeItem("veo-record-draft");
-    setPublished(true);
+    try {
+      const imageUrl = imageFile ? await uploadImage(imageFile) : final.image && !final.image.startsWith("data:") ? final.image : null;
+      const response = await fetch("/api/records", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          slug: final.slug,
+          type: final.type,
+          title: final.title,
+          summary: final.summary,
+          status: final.status,
+          description: final.description,
+          role: final.role,
+          need: final.need,
+          contradiction: final.contradiction,
+          tags: final.tags,
+          connections: final.connections,
+          imageUrl,
+          imagePosition: final.imagePosition,
+          published: true,
+        }),
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.error || "The database refused the record.");
+      window.localStorage.removeItem("veo-record-draft");
+      setPublished(true);
+    } catch (error) {
+      const existing = JSON.parse(window.localStorage.getItem("veo-local-records") || "[]") as Draft[];
+      window.localStorage.setItem("veo-local-records", JSON.stringify([...existing.filter((item) => item.slug !== final.slug), final]));
+      setPublishError(error instanceof Error ? error.message : "Record saved locally, but database publication failed.");
+    } finally {
+      setPublishing(false);
+    }
   };
 
   if (published) {
     return (
       <main className="wizard-success">
         <div className="success-mark"><Check size={26} /></div>
-        <span>LOCAL RECORD CREATED</span>
+        <span>PUBLIC RECORD CREATED</span>
         <h1>{draft.title}</h1>
-        <p>The record is safe in this browser and ready for cloud publication once project storage is connected.</p>
+        <p>The record was written to the database and is available from the public archive.</p>
         <div><button className="studio-primary-button" onClick={() => { setDraft(initialDraft); setStep(0); setPublished(false); }}>Create another</button><Link href="/archive">View public archive</Link></div>
       </main>
     );
@@ -114,7 +151,7 @@ export function CatalogueWizard() {
   return (
     <main className="catalogue-wizard">
       <header className="studio-page-heading wizard-heading">
-        <div><p>DATABASE WIZARD / AUTOSAVED LOCALLY</p><h1>Add something to the world.</h1><span>One guided decision at a time. Nothing publishes until the final review.</span></div>
+        <div><p>DATABASE WIZARD / AUTOSAVED LOCALLY</p><h1>Add something to the world.</h1><span>One guided decision at a time. Final review writes to the database when connected.</span></div>
         <div className="save-state"><Save size={13} /> Draft safe</div>
       </header>
 
@@ -153,10 +190,16 @@ export function CatalogueWizard() {
         {step === 3 && (
           <div className="media-step">
             <label className={draft.image ? "image-dropzone has-image" : "image-dropzone"}>
-              {draft.image ? <img src={draft.image} alt="Selected record preview" /> : <><ImagePlus size={28} /><strong>Drop a cover image or choose a file</strong><span>JPG, PNG, WEBP / up to 15 MB recommended</span></>}
+              {draft.image ? <img src={draft.image} alt="Selected record preview" style={{ objectPosition: draft.imagePosition }} /> : <><ImagePlus size={28} /><strong>Drop a cover image or choose a file</strong><span>JPG, PNG, WEBP / up to 15 MB recommended</span></>}
               <input type="file" accept="image/png,image/jpeg,image/webp" onChange={(event) => chooseImage(event.target.files?.[0])} />
               {draft.image && <span className="replace-image"><Upload size={13} /> Replace image</span>}
             </label>
+            {draft.image && (
+              <label className="image-position-control">
+                <span>VERTICAL IMAGE POSITION</span>
+                <input type="range" min="0" max="100" value={verticalPosition(draft.imagePosition)} onChange={(event) => set("imagePosition", `50% ${event.target.value}%`)} />
+              </label>
+            )}
             <div className="media-guidance">
               <Box size={20} />
               <div><strong>3D belongs in the media vault</strong><p>Attach GLB or GLTF assets after the record exists. The 3D inspector will generate a thumbnail and keep the original file unchanged.</p></div>
@@ -174,17 +217,18 @@ export function CatalogueWizard() {
 
         {step === 5 && (
           <div className="record-review">
-            <div className="review-cover">{draft.image ? <img src={draft.image} alt="" /> : <div><CurrentTypeIcon size={34} /><span>NO COVER YET</span></div>}<span>{draft.status}</span></div>
-            <div className="review-copy"><span>{currentType[1].toUpperCase()} / LOCAL DRAFT</span><h3>{draft.title || "Untitled record"}</h3><p>{draft.summary || "No signal sentence written."}</p><div>{draft.tags.map((tag) => <i key={tag}>#{tag}</i>)}</div></div>
+            <div className="review-cover">{draft.image ? <img src={draft.image} alt="" style={{ objectPosition: draft.imagePosition }} /> : <div><CurrentTypeIcon size={34} /><span>NO COVER YET</span></div>}<span>{draft.status}</span></div>
+            <div className="review-copy"><span>{currentType[1].toUpperCase()} / DATABASE READY</span><h3>{draft.title || "Untitled record"}</h3><p>{draft.summary || "No signal sentence written."}</p><div>{draft.tags.map((tag) => <i key={tag}>#{tag}</i>)}</div></div>
             <div className="review-checklist"><div className={draft.title ? "ok" : ""}>{draft.title ? <Check size={12} /> : "!"}<span>Identity</span><strong>{draft.title ? "Ready" : "Missing"}</strong></div><div className={draft.description ? "ok" : ""}>{draft.description ? <Check size={12} /> : "!"}<span>Meaning</span><strong>{draft.description ? "Ready" : "Optional"}</strong></div><div className={draft.image ? "ok" : ""}>{draft.image ? <Check size={12} /> : "!"}<span>Media</span><strong>{draft.image ? "Attached" : "Optional"}</strong></div></div>
-            <div className="review-notice"><strong>LOCAL-FIRST MODE</strong><p>This creates the record in your browser. Cloud publication stays disabled until authenticated database storage is connected, preventing accidental public uploads.</p></div>
+            <div className="review-notice"><strong>DATABASE PUBLICATION</strong><p>This writes the record to Neon when `DATABASE_URL` is configured. If image storage is connected, the cover is uploaded to Vercel Blob first.</p></div>
+            {publishError && <div className="publish-error"><strong>DATABASE WRITE FAILED</strong><p>{publishError}</p><small>A local browser copy was kept so the work is not lost.</small></div>}
           </div>
         )}
 
         <footer className="wizard-footer">
           <button className="wizard-back" onClick={() => setStep((value) => Math.max(0, value - 1))} disabled={step === 0}><ArrowLeft size={14} /> Back</button>
           <span>{step + 1} of {steps.length}</span>
-          {step < steps.length - 1 ? <button className="studio-primary-button" onClick={() => setStep((value) => Math.min(steps.length - 1, value + 1))} disabled={!canContinue}>Continue <ArrowRight size={14} /></button> : <button className="studio-primary-button publish-record" onClick={publish}><Check size={14} /> Create local record</button>}
+          {step < steps.length - 1 ? <button className="studio-primary-button" onClick={() => setStep((value) => Math.min(steps.length - 1, value + 1))} disabled={!canContinue}>Continue <ArrowRight size={14} /></button> : <button className="studio-primary-button publish-record" onClick={publish} disabled={publishing || !canContinue}>{publishing ? <LoaderCircle className="spin" size={14} /> : <Check size={14} />} Publish record</button>}
         </footer>
       </section>
     </main>
@@ -199,10 +243,24 @@ function slugify(value: string) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
+function verticalPosition(value: string) {
+  const parts = value.match(/(\d+)%/g) || [];
+  return Number((parts[1] || parts[0] || "50%").replace("%", ""));
+}
+
+async function uploadImage(file: File) {
+  const form = new FormData();
+  form.append("file", file);
+  const response = await fetch("/api/upload", { method: "POST", body: form });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.error || "Image upload failed.");
+  return payload.url as string;
+}
+
 function stepTitle(step: number, type: string) {
   return ["What kind of record is this?", "Give it an identity", "Decide what it means right now", "Give the record a face", "Connect it to the world", `Review this ${type}`][step];
 }
 
 function stepHint(step: number) {
-  return ["Choose the closest shape. You can change it later without losing text.", "Only the name and signal sentence are required.", "Incomplete and contradictory answers are valid production data.", "The original file stays untouched; the browser creates a preview.", "Connections turn isolated notes into a searchable world graph.", "Nothing here reaches the public archive in local-first mode."][step];
+  return ["Choose the closest shape. You can change it later without losing text.", "Only the name and signal sentence are required.", "Incomplete and contradictory answers are valid production data.", "The original file stays untouched; the browser creates a preview.", "Connections turn isolated notes into a searchable world graph.", "Final review writes to the public archive when the database is connected."][step];
 }

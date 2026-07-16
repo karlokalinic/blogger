@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PRUDINA INDEX — KARLYTTA FILE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="masthead">
+    <div>
+      <span class="eyebrow">RP NETWORK PUBLIC ARCHIVE / CASE FILE 01</span>
+      <h1>PRUDINA <i>INDEX</i></h1>
+    </div>
+    <div class="status">
+      <span class="pulse"></span>
+      ARCHIVE PARTIALLY AVAILABLE
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Archive sections">
+    <button class="tab active" data-tab="brief">Breaking</button>
+    <button class="tab" data-tab="audio">Audio</button>
+    <button class="tab" data-tab="claims">Claims</button>
+    <button class="tab" data-tab="voices">Voices</button>
+    <button class="tab" data-tab="timeline">Timeline</button>
+    <button class="tab" data-tab="lab">Artifact Lab</button>
+    <button class="tab" data-tab="control">Game Control</button>
+  </nav>
+
+  <main>
+    <section id="brief" class="panel active">
+      <div class="hero-grid">
+        <figure class="cover-card">
+          <img src="assets/karlytta_cover.jpg" alt="KARLYTTA cover">
+          <figcaption>ARCHIVE IMAGE / OWNERSHIP DISPUTED IN THREE NOTICES</figcaption>
+        </figure>
+        <article class="lead">
+          <span class="stamp">BREAKING / 16.07.2026 / 19:40</span>
+          <h2>Karlytta files civil action against President Varda, Presidency and RP Network</h2>
+          <p class="dek">The filing alleges a coerced sexual encounter after a restricted 2008 performance and a subsequent pattern of surveillance, professional pressure, private-record access and retaliatory editing.</p>
+          <p>The defendants deny wrongdoing. Several exhibits remain sealed. The public complaint names specific acts and dates while asking the court to examine the machinery that converted private refusal into public entertainment.</p>
+          <blockquote>“Pisala sam to. Govorila sam to. Pjevala sam to cijeli život. Sve je bilo vani. Samo nitko nije slušao.”</blockquote>
+          <div class="warning">RP NETWORK WILL NOT SPECULATE. A THREE-HOUR SPECIAL BEGINS AT 21:00.</div>
+        </article>
+      </div>
+      <div class="fact-strip">
+        <div><b>Plaintiff</b><span>Karla Vita Lukan / Karlytta</span></div>
+        <div><b>Defendants</b><span>Varda, Presidency, RP Network, Foundation</span></div>
+        <div><b>Public exhibits</b><span>14 listed / 6 sealed</span></div>
+        <div><b>Case state</b><span>Complaint filed; authenticity disputes pending</span></div>
+      </div>
+    </section>
+
+    <section id="audio" class="panel">
+      <div class="section-head">
+        <span>LISTENING ROOM</span>
+        <h2>Two files. One public memory.</h2>
+        <p>The technical differences are factual. Their meaning is contested.</p>
+      </div>
+      <div class="audio-grid">
+        <article class="audio-card">
+          <span class="badge confirmed">PUBLIC MASTER</span>
+          <h3>KARLYTTA</h3>
+          <audio controls preload="metadata" src="assets/karlytta_official.ogg"></audio>
+          <dl id="officialMetrics"></dl>
+        </article>
+        <article class="audio-card">
+          <span class="badge disputed">DISPUTED SOURCE</span>
+          <h3>KARLYTTA: NOĆNI ZAPIS</h3>
+          <audio controls preload="metadata" src="assets/karlytta_nocni_zapis.ogg"></audio>
+          <dl id="extendedMetrics"></dl>
+        </article>
+      </div>
+      <div class="interpretive-note">
+        <h3>Archive rule</h3>
+        <p>The extended file is not accepted as “truer” because it is longer or darker. It is valuable because ownership, export history, arrangement and deletion are themselves narrative actions.</p>
+      </div>
+    </section>
+
+    <section id="claims" class="panel">
+      <div class="section-head">
+        <span>BURDEN OF PROOF</span>
+        <h2>Claims are not all the same kind of sentence.</h2>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-status="all">All</button>
+        <button class="filter" data-status="alleged">Alleged</button>
+        <button class="filter" data-status="disputed">Disputed</button>
+        <button class="filter" data-status="unknown">Unknown</button>
+        <button class="filter" data-status="optional game bridge">Game bridge</button>
+      </div>
+      <div id="claimList" class="claim-list"></div>
+    </section>
+
+    <section id="voices" class="panel">
+      <div class="section-head">
+        <span>PUBLIC RESPONSE</span>
+        <h2>Everybody heard the same track. Nobody heard the same event.</h2>
+      </div>
+      <div id="voiceList" class="voice-list"></div>
+    </section>
+
+    <section id="timeline" class="panel">
+      <div class="section-head">
+        <span>RECONSTRUCTED CHRONOLOGY</span>
+        <h2>A career is not a clean line. The archive lies by arranging it.</h2>
+      </div>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section id="lab" class="panel">
+      <div class="section-head">
+        <span>PRODUCTION TOOL</span>
+        <h2>Generate one buildable proof of existence.</h2>
+        <p>Every artifact must link to a person, claim and contradiction. Otherwise it is decorative paperwork, the natural predator of solo developers.</p>
+      </div>
+      <div class="lab">
+        <div class="lab-controls">
+          <select id="categorySelect"></select>
+          <button id="generateArtifact">Draw artifact</button>
+        </div>
+        <article id="artifactCard" class="artifact-card">
+          <span class="artifact-id">WAITING</span>
+          <h3>Select a category or draw from the full archive.</h3>
+          <p>Production state: backlog</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="control" class="panel">
+      <div class="section-head">
+        <span>SCOPE DEFENCE</span>
+        <h2>The website is Prudina’s memory. The game is the Doctor’s experience.</h2>
+      </div>
+      <div class="control-grid">
+        <article>
+          <h3>70%</h3>
+          <b>Playable vertical slice</b>
+          <p>Scenes, mechanics, locations, decisions, builds and tests.</p>
+        </article>
+        <article>
+          <h3>20%</h3>
+          <b>Reusable world artifacts</b>
+          <p>Broadcasts, forms, props and site pages that also enter the game.</p>
+        </article>
+        <article>
+          <h3>10%</h3>
+          <b>Free experiment</b>
+          <p>Music, visual risk and strange branches that do not yet owe rent.</p>
+        </article>
+      </div>
+      <div class="return-test">
+        <h3>Return test</h3>
+        <ol>
+          <li>What player pressure does this reveal?</li>
+          <li>What existing asset does it reuse?</li>
+          <li>Which person becomes more legible?</li>
+          <li>What is the cheapest in-game echo?</li>
+          <li>What is lost if it never exists?</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>PRUDINA INDEX / LOCAL BUILD</span>
+    <span>THE ARCHIVE IS NOT THE VERDICT.</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

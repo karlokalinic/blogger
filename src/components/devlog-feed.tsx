@@ -55,10 +55,11 @@ export function DevlogFeed({ posts }: DevlogFeedProps) {
                 alt={post.imageAlt}
                 fill
                 sizes="(max-width: 900px) 100vw, 42vw"
-                style={{ objectPosition: post.gallery?.[0]?.position ?? "center" }}
+                style={{ objectPosition: post.coverPosition ?? post.gallery?.[0]?.position ?? "center" }}
               />
               <span>{String(index + 1).padStart(2, "0")}</span>
               {post.gallery && <small><Images size={12} /> {post.gallery.length} CAPTURES</small>}
+              {post.pinned && <b className="pin-badge">PINNED</b>}
             </Link>
             <div className="devlog-list-copy">
               <div className="log-meta"><span>{post.number}</span><span>{post.category}</span><span>{post.date}</span></div>

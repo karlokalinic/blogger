@@ -4,16 +4,15 @@ import { useEffect, useRef } from "react";
 
 type Particle = { x: number; y: number; r: number; speed: number; alpha: number; drift: number };
 
-export function Atmosphere() {
+export function Atmosphere({ particles: showParticles = true }: { particles?: boolean } = {}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const cursor = cursorRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    if (!cursor) return;
+    const ctx = showParticles && canvas ? canvas.getContext("2d") : null;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const finePointer = window.matchMedia("(pointer: fine)").matches;
@@ -23,6 +22,7 @@ export function Atmosphere() {
     let height = 0;
 
     const resize = () => {
+      if (!canvas || !ctx) return;
       width = window.innerWidth;
       height = window.innerHeight;
       const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -46,6 +46,7 @@ export function Atmosphere() {
     };
 
     const draw = () => {
+      if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
       for (const particle of particles) {
         particle.y -= particle.speed;
@@ -62,33 +63,63 @@ export function Atmosphere() {
     };
 
     const moveCursor = (event: PointerEvent) => {
-      if (!cursor || !finePointer) return;
+      if (!finePointer) return;
       cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
       cursor.dataset.visible = "true";
-      const target = event.target as HTMLElement;
-      cursor.dataset.hover = target.closest("a, button, input, textarea, select, [role='button']") ? "true" : "false";
+      const target = event.target instanceof Element ? event.target : document.elementFromPoint(event.clientX, event.clientY);
+      cursor.dataset.hover = target?.closest("a, button, select, [role='button'], .wb-link-label, .merge-tile") ? "true" : "false";
+      cursor.dataset.text = target?.closest("input, textarea, [contenteditable='true'], .wb-text-editor") ? "true" : "false";
+      cursor.dataset.drag = target?.closest(".wb-viewport.tool-pan, .wb-element, .wb-resize, .board-frame, .merge-tile, .character-model-stage canvas") ? "true" : "false";
     };
 
     const hideCursor = () => {
-      if (cursor) cursor.dataset.visible = "false";
+      cursor.dataset.visible = "false";
+      cursor.dataset.down = "false";
     };
 
-    resize();
-    draw();
-    window.addEventListener("resize", resize);
+    const setDown = () => {
+      if (finePointer) cursor.dataset.down = "true";
+    };
+
+    const clearDown = () => {
+      cursor.dataset.down = "false";
+    };
+
+    const cursorHome = cursor.parentElement;
+    const syncFullscreenHost = () => {
+      const host = document.fullscreenElement ?? cursorHome;
+      if (host && cursor.parentElement !== host) host.appendChild(cursor);
+    };
+
+    if (ctx) {
+      resize();
+      draw();
+      window.addEventListener("resize", resize);
+    }
     window.addEventListener("pointermove", moveCursor, { passive: true });
+    window.addEventListener("pointerdown", setDown, { passive: true });
+    window.addEventListener("pointerup", clearDown, { passive: true });
+    window.addEventListener("pointercancel", clearDown, { passive: true });
+    window.addEventListener("blur", hideCursor);
+    document.addEventListener("fullscreenchange", syncFullscreenHost);
     document.documentElement.addEventListener("mouseleave", hideCursor);
     return () => {
       window.cancelAnimationFrame(frame);
       window.removeEventListener("resize", resize);
       window.removeEventListener("pointermove", moveCursor);
+      window.removeEventListener("pointerdown", setDown);
+      window.removeEventListener("pointerup", clearDown);
+      window.removeEventListener("pointercancel", clearDown);
+      window.removeEventListener("blur", hideCursor);
+      document.removeEventListener("fullscreenchange", syncFullscreenHost);
       document.documentElement.removeEventListener("mouseleave", hideCursor);
+      if (cursorHome && cursor.parentElement !== cursorHome) cursorHome.appendChild(cursor);
     };
-  }, []);
+  }, [showParticles]);
 
   return (
     <>
-      <canvas ref={canvasRef} className="atmosphere-canvas" aria-hidden="true" />
+      {showParticles && <canvas ref={canvasRef} className="atmosphere-canvas" aria-hidden="true" />}
       <div ref={cursorRef} className="signal-cursor" aria-hidden="true"><span /></div>
     </>
   );

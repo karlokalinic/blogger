@@ -1,0 +1,16 @@
+id,title,date,custodian,claim,class,limitation
+E001,North House visitor fragment,2008-11-18,Presidency,C01,B,two pages absent
+E002,security route revision,2008-11-18,Presidential Security,C01,B,"driver informed, passenger not"
+E003,appearance addendum,2007-09-04,Foundation,C01,A,priority availability undefined
+E004,raw 2013 interview,2013-05-21,RP Archive,C09,A,full seventeen minutes
+E005,edit decision list,2013-05-21,RP Network,C09,B,rationale fields blank
+E006,public master,2014-06-08,Label,C03,A,documented delivery
+E007,NOĆNI ZAPIS file,unknown,anonymous source,C03,C,provenance unresolved
+E008,session index,2014-04-12,Studio North,C03,B,GUIDE_M listed
+E009,late room access,2014-04-13,Studio North,C03,B,room reopened
+E010,civil-protection license,2020-03-17,Ministry,C04,A,recruitment excluded
+E011,clinic access log,2024-07-06,Clinic,C04,A,non-clinical account
+E012,preservation letter,2025-10-01,Pažić Legal,C03,A,receipt confirmed
+E013,three takedown notices,2026-03,multiple,C07,B,different master codes
+E014,public complaint,2026-07-16,Court,C01,A,exhibits sealed
+E015,preservation order,2026-07-22,Court,C01,A,broad scope
