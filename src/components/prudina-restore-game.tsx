@@ -373,7 +373,7 @@ export function PrudinaRestoreGame() {
               <div className={styles.sceneWaiting}>
                 <p>SLJEDEĆA SCENA</p>
                 <h2 id="scene-title">Priča čeka novi predmet.</h2>
-                <span>Spoji još {Math.max(0, neededForScene - state.mergesSinceScene)} {neededForScene - state.mergesSinceScene === 1 ? "par" : "para"} da čuješ što se dogodilo između {scenePeople[0].name} i {scenePeople[1].name}.</span>
+                <span>Spoji još {Math.max(0, neededForScene - state.mergesSinceScene)} {neededForScene - state.mergesSinceScene === 1 ? "par" : "para"} da čuješ što se dogodilo između {scenePeople[0].genitive} i {scenePeople[1].genitive}.</span>
                 <div className={styles.sceneProgress} aria-label={`${sceneProgress} od ${neededForScene} spajanja`}>{Array.from({ length: neededForScene }, (_, index) => <i key={index} className={index < sceneProgress ? styles.progressFilled : ""} />)}</div>
               </div>
             )}
@@ -455,7 +455,7 @@ export function PrudinaRestoreGame() {
 
       <footer className={styles.gameFooter}>
         <div><strong>VEO ZAVOD / PRUDINA</strong><span>{!ready ? "Učitavanje napretka…" : saveAvailable ? "Napredak je spremljen na ovom uređaju." : "Igra radi, ali preglednik ne dopušta trajno spremanje."}</span></div>
-        <div><span>{state.totalMerges} spajanja</span><span>Najviša razina {state.highestLevel}/{MAX_ITEM_LEVEL}</span></div>
+        <div><span>{state.totalMerges} {state.totalMerges === 1 ? "spajanje" : "spajanja"}</span><span>Najviša razina {state.highestLevel}/{MAX_ITEM_LEVEL}</span></div>
         <button onClick={resetGame} className={resetArmed ? styles.resetArmed : ""}><RotateCcw size={16} />{resetArmed ? "Klikni opet: obriši napredak" : "Počni ispočetka"}</button>
       </footer>
     </main>

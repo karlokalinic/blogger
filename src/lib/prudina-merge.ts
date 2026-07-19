@@ -65,15 +65,16 @@ export type FamilyScene = {
 export const characters: Array<{
   id: CharacterId;
   name: string;
+  genitive: string;
   shortRole: string;
   role: string;
   truth: string;
 }> = [
-  { id: "ruza", name: "Ruža", shortRole: "STUP KUĆE", role: "baka, kuharica i neslužbeni sud", truth: "Hrani obje strane, a pamti tko je prvi ustao od stola." },
-  { id: "mara", name: "Mara", shortRole: "BLAGAJNICA", role: "sestra koja vodi račune", truth: "Traži malo, zapisuje sve i nikad ne zaboravlja ton kojim je nešto rečeno." },
-  { id: "davor", name: "Davor", shortRole: "MAJSTOR", role: "brat koji popravlja prije isprike", truth: "Dođe kad pukne cijev, ode prije hvala i uvredu ostavi kao račun." },
-  { id: "karlytta", name: "Karlytta", shortRole: "ZVIJEZDA", role: "unuka koju Prudina prisvaja", truth: "Javno reže ljude na pola; privatno plaća dug koji nikad neće priznati." },
-  { id: "deni", name: "Deni", shortRole: "DOKTOR", role: "mladi liječnik bez sigurne strane", truth: "Svi od njega traže istinu, ali samo ako potvrđuje onu koju već imaju." },
+  { id: "ruza", name: "Ruža", genitive: "Ruže", shortRole: "STUP KUĆE", role: "baka, kuharica i neslužbeni sud", truth: "Hrani obje strane, a pamti tko je prvi ustao od stola." },
+  { id: "mara", name: "Mara", genitive: "Mare", shortRole: "BLAGAJNICA", role: "sestra koja vodi račune", truth: "Traži malo, zapisuje sve i nikad ne zaboravlja ton kojim je nešto rečeno." },
+  { id: "davor", name: "Davor", genitive: "Davora", shortRole: "MAJSTOR", role: "brat koji popravlja prije isprike", truth: "Dođe kad pukne cijev, ode prije hvala i uvredu ostavi kao račun." },
+  { id: "karlytta", name: "Karlytta", genitive: "Karlytte", shortRole: "ZVIJEZDA", role: "unuka koju Prudina prisvaja", truth: "Javno reže ljude na pola; privatno plaća dug koji nikad neće priznati." },
+  { id: "deni", name: "Deni", genitive: "Denija", shortRole: "DOKTOR", role: "mladi liječnik bez sigurne strane", truth: "Svi od njega traže istinu, ali samo ako potvrđuje onu koju već imaju." },
 ];
 
 export const relations: Array<{
