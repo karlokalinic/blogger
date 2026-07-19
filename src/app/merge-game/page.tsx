@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PrudinaRestoreGame } from "@/components/prudina-restore-game";
 
 export const metadata: Metadata = {
-  title: "Svi za stolom — Prudina merge igra",
-  description: "Jednostavna Prudina igra spajanja, nadogradnje kuće i zamršenih obiteljskih odnosa za sve generacije.",
+  title: "Program ODRŽI — Grad Prudina",
+  description: "Javni pilot-program Prudine za objedinjavanje potreba kućanstva, fizičke naloge jedinice P-1 i praćenje institucionalnog kontinuiteta.",
 };
 
 export default function MergeGamePage() {

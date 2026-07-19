@@ -13,6 +13,7 @@ export type RelationId =
   | "deni-karlytta"
   | "karlytta-davor";
 export type UpgradeId = "betterBag" | "familyBook" | "longTable" | "oldRadio";
+export type ServiceStep = 0 | 1 | 2 | 3;
 
 export type MergeTile = {
   id: string;
@@ -39,8 +40,26 @@ export type PrudinaMergeState = {
   relations: Record<RelationId, RelationScore>;
   sceneIndex: number;
   sceneReady: boolean;
+  serviceIndex: number;
+  serviceStep: ServiceStep;
+  servicesCompleted: number;
   lastMessage: string;
   serial: number;
+};
+
+export type ServiceRequest = {
+  id: string;
+  code: string;
+  title: string;
+  resident: string;
+  request: string;
+  location: string;
+  duration: string;
+  load: string;
+  cost: number;
+  physicalPlan: [string, string, string];
+  stopCondition: string;
+  proof: string;
 };
 
 export type SceneChoice = {
@@ -61,6 +80,81 @@ export type FamilyScene = {
   body: string;
   choices: [SceneChoice, SceneChoice];
 };
+
+export const serviceRequests: ServiceRequest[] = [
+  {
+    id: "water",
+    code: "IZV-01-044",
+    title: "Dostava pitke vode",
+    resident: "Mara / kućanstvo 044",
+    request: "Voda iz slavine ponovno ima miris. Donesite dovoljno do sutra ujutro.",
+    location: "kuhinja i ulaz u stan",
+    duration: "22 min",
+    load: "12 kg / dvije zatvorene posude",
+    cost: 18,
+    physicalPlan: [
+      "Provjeriti javnu obavijest o vodi i prohodnost ulaza.",
+      "Preuzeti 12 litara u neoštećenim, tvornički zatvorenim posudama.",
+      "Predati na pragu; bez ulaska u dom ako stanovnica to izričito ne zatraži.",
+    ],
+    stopCondition: "Prekinuti ako je prolaz zaleđen, posuda oštećena ili osoba prijavljuje akutne simptome; tada pozvati hitnu službu.",
+    proof: "vrijeme predaje, fotografija pečata posude i potvrda stanovnice bez snimanja unutrašnjosti doma",
+  },
+  {
+    id: "window",
+    code: "IZV-02-118",
+    title: "Privremeno brtvljenje prozora",
+    resident: "Ruža / kućanstvo 118",
+    request: "Noću puše kraj kreveta. Ne mijenjajte prozor; samo neka izdrži do pregleda.",
+    location: "spavaća soba / vanjski prozor",
+    duration: "35 min",
+    load: "2,4 kg / folija, traka, termometar",
+    cost: 22,
+    physicalPlan: [
+      "Izmjeriti temperaturu i pregledati staklo bez pomicanja namještaja stanovnice.",
+      "Postaviti uklonjivu unutarnju brtvu; ne bušiti okvir i ne zatvarati ventilacijski otvor.",
+      "Ponovno izmjeriti propuh i ostaviti pisanu uputu za uklanjanje.",
+    ],
+    stopCondition: "Ne dirati nosivi okvir, električne vodove ni plinsku instalaciju. Napuklo staklo zahtijeva ljudskog tehničara.",
+    proof: "dvije temperature, fotografija samo prozora i Ružina usmena potvrda da prolaz ostaje slobodan",
+  },
+  {
+    id: "medicine",
+    code: "IZV-03-207",
+    title: "Preuzimanje propisane terapije",
+    resident: "Deni / nalog za Ružu",
+    request: "Terapija je izdana i čeka u ljekarni. Preuzeti zatvoren paket, bez tumačenja doze.",
+    location: "ljekarna — kućni prag",
+    duration: "28 min",
+    load: "0,3 kg / zapečaćeni paket",
+    cost: 26,
+    physicalPlan: [
+      "Provjeriti šifru naloga i podudaranje imena bez prikaza zdravstvenih podataka trećima.",
+      "Preuzeti zatvoreni paket; ne otvarati, ne brojiti tablete i ne davati medicinski savjet.",
+      "Predati ovlaštenoj osobi i pročitati samo upozorenje ljekarnika priloženo uz paket.",
+    ],
+    stopCondition: "Svako nepodudaranje imena, oštećen pečat ili pitanje o doziranju vraća predmet ljekarniku ili liječniku.",
+    proof: "šifra predaje, cjelovitost pečata i potvrda primitka bez pohrane dijagnoze",
+  },
+  {
+    id: "moisture",
+    code: "IZV-04-311",
+    title: "Mjerenje vlage iza ormara",
+    resident: "Mara i Davor / kućanstvo 044",
+    request: "Zid je mokar iza ormara. Izmjerite i zabilježite; nemojte sami rušiti ni čistiti.",
+    location: "dnevna soba / sjeverni zid",
+    duration: "31 min",
+    load: "1,8 kg / mjerač, svjetlo, zaštitna maska",
+    cost: 20,
+    physicalPlan: [
+      "Isključiti obližnju utičnicu samo ako je dostupna bez rastavljanja i osigurati prolaz.",
+      "Pomaknuti ormar najviše 20 cm uz pristanak i izmjeriti tri točke bez struganja površine.",
+      "Vratiti namještaj u stabilan položaj i označiti hitnost za ljudski građevinski pregled.",
+    ],
+    stopCondition: "Prekinuti kod vidljivog kabela, nestabilnog ormara, opsežne plijesni ili otežanog disanja.",
+    proof: "tri očitanja, tri uske fotografije zida i evidentirana uputa o provjetravanju",
+  },
+];
 
 export const characters: Array<{
   id: CharacterId;
@@ -98,96 +192,96 @@ export const familyScenes: FamilyScene[] = [
     id: "boiler",
     relation: "mara-davor",
     people: ["mara", "davor"],
-    kicker: "UTORAK / 19:40 / MARINA KUHINJA",
-    title: "Bojler i uvreda",
+    kicker: "PREDMET ODN-01 / KUHINJA / 19:40",
+    title: "Neformalni popravak bojlera",
     body: "Davor pred susjedima kaže da Mara ‘ne zna s novcem’. Iste večeri bez poziva donese ventil i ostane dok voda ponovno ne poteče.",
     choices: [
-      { label: "Mara uzvraća pred svima", result: "Mara mu vraća svaku riječ. Davor ipak dovrši posao. Bliskost boli, zamjeranje pamti.", warmth: 3, friction: 10, coins: 28, stories: 1 },
-      { label: "Davor ostaje bez isprike", result: "Nitko ne kaže hvala. Nitko ga ne tjera. Popravak postaje njihov najbliži oblik isprike.", warmth: 9, friction: 5, coins: 20, stories: 2 },
+      { label: "Evidentiraj Marin javni odgovor", result: "Mara mu vraća svaku riječ. Davor ipak dovrši posao. Bliskost boli, zamjeranje pamti.", warmth: 3, friction: 10, coins: 28, stories: 1 },
+      { label: "Evidentiraj ostanak bez isprike", result: "Nitko ne kaže hvala. Nitko ga ne tjera. Popravak postaje njihov najbliži oblik isprike.", warmth: 9, friction: 5, coins: 20, stories: 2 },
     ],
   },
   {
     id: "sunday-table",
     relation: "ruza-karlytta",
     people: ["ruza", "karlytta"],
-    kicker: "NEDJELJA / POSLIJE MISE",
-    title: "Mjesto na čelu stola",
+    kicker: "PREDMET ODN-02 / NEDJELJNI OBROK",
+    title: "Raspored sjedenja i pripadnost",
     body: "Ruža Karlytti servira najbolji komad mesa, pa pred svima pita kada će se ‘opet ponašati kao naša’. Nitko ne dira pribor.",
     choices: [
-      { label: "Karlytta se nasmije i reže", result: "Šala spasi ručak i uništi tišinu. Ruža je ponosna na oštrinu koju javno osuđuje.", warmth: 7, friction: 8, coins: 24, stories: 2 },
-      { label: "Ruža joj napuni tanjur", result: "Ruža prekida raspravu još jednom žlicom. Hrana glumi oprost, ali pitanje ostaje na stolu.", warmth: 11, friction: 3, coins: 18, stories: 2 },
+      { label: "Evidentiraj obranu humorom", result: "Šala spasi ručak i uništi tišinu. Ruža je ponosna na oštrinu koju javno osuđuje.", warmth: 7, friction: 8, coins: 24, stories: 2 },
+      { label: "Evidentiraj skrb bez odgovora", result: "Ruža prekida raspravu još jednom žlicom. Hrana glumi oprost, ali pitanje ostaje na stolu.", warmth: 11, friction: 3, coins: 18, stories: 2 },
     ],
   },
   {
     id: "work-certificate",
     relation: "deni-davor",
     people: ["deni", "davor"],
-    kicker: "AMBULANTA / ZADNJI TERMIN",
-    title: "Nalaz koji vrijeđa",
+    kicker: "PREDMET ODN-03 / AMBULANTA",
+    title: "Odbijanje zdravstvenog ograničenja",
     body: "Deni kaže da Davor mjesec dana ne smije na gradilište. Davor čuje da ga je dječak proglasio slabim i traži papir samo da ga može poderati.",
     choices: [
-      { label: "Deni ne povlači riječ", result: "Deni ostaje miran. Davor zalupi vratima, ali papir ipak odnese kući u unutarnjem džepu.", warmth: 4, friction: 11, coins: 30, stories: 2 },
-      { label: "Davor traži drugi način", result: "Dogovore lakši posao koji obojica nazivaju privremenim. Ponos preživi, tijelo možda također.", warmth: 10, friction: 5, coins: 20, stories: 2 },
+      { label: "Zadrži izdano ograničenje", result: "Deni ostaje miran. Davor zalupi vratima, ali papir ipak odnese kući u unutarnjem džepu.", warmth: 4, friction: 11, coins: 30, stories: 2 },
+      { label: "Evidentiraj prilagođeni rad", result: "Dogovore lakši posao koji obojica nazivaju privremenim. Ponos preživi, tijelo možda također.", warmth: 10, friction: 5, coins: 20, stories: 2 },
     ],
   },
   {
     id: "radio-call",
     relation: "karlytta-davor",
     people: ["karlytta", "davor"],
-    kicker: "RADIO PRUDINA / UŽIVO",
-    title: "Poziv bez predstavnika",
+    kicker: "PREDMET ODN-04 / RADIO PRUDINA",
+    title: "Javni sukob i dodjela posla",
     body: "Davor se uključi u emisiju i nazove Karlyttu izdajicom. Ona prepozna glas, ali ga ne imenuje; pozove baš njegovu brigadu da popravi pozornicu.",
     choices: [
-      { label: "Karlytta ga javno poklopi", result: "Prudina dobije dobar radio. Davor dobije posao. Oboje tvrde da je onaj drugi izgubio.", warmth: 5, friction: 12, coins: 36, stories: 2 },
-      { label: "Davor prihvati posao", result: "Na pozornici rade leđima jedno prema drugome. To je njihov najduži mir u godinama.", warmth: 11, friction: 6, coins: 28, stories: 2 },
+      { label: "Evidentiraj javno odbijanje", result: "Prudina dobije dobar radio. Davor dobije posao. Oboje tvrde da je onaj drugi izgubio.", warmth: 5, friction: 12, coins: 36, stories: 2 },
+      { label: "Evidentiraj prihvaćeni nalog", result: "Na pozornici rade leđima jedno prema drugome. To je njihov najduži mir u godinama.", warmth: 11, friction: 6, coins: 28, stories: 2 },
     ],
   },
   {
     id: "envelope",
     relation: "karlytta-mara",
     people: ["karlytta", "mara"],
-    kicker: "POŠTA / BEZ POŠILJATELJA",
-    title: "Novac u kuverti",
+    kicker: "PREDMET ODN-05 / NEPOTPISANA UPLATA",
+    title: "Neformalna financijska pomoć",
     body: "Mara prepozna Karlyttin rukopis na kuverti s novcem. Iste noći na radiju čuje vlastitu rečenicu pretvorenu u refren.",
     choices: [
-      { label: "Mara vraća kuvertu", result: "Novac se vrati, rečenica ne može. Karlytta prvi put shvati da pomoć može zvučati kao krađa.", warmth: 4, friction: 12, coins: 32, stories: 3 },
-      { label: "Mara plati grijanje", result: "Mara potroši svaki euro i nikome ne kaže hvala. Karlytta nikome ne kaže da je čekala.", warmth: 12, friction: 6, coins: 20, stories: 3 },
+      { label: "Evidentiraj povrat sredstava", result: "Novac se vrati, rečenica ne može. Karlytta prvi put shvati da pomoć može zvučati kao krađa.", warmth: 4, friction: 12, coins: 32, stories: 3 },
+      { label: "Evidentiraj plaćeno grijanje", result: "Mara potroši svaki euro i nikome ne kaže hvala. Karlytta nikome ne kaže da je čekala.", warmth: 12, friction: 6, coins: 20, stories: 3 },
     ],
   },
   {
     id: "old-results",
     relation: "deni-mara",
     people: ["deni", "mara"],
-    kicker: "AMBULANTA / MAPA IZ 1998.",
-    title: "Stari nalaz, nova voda",
+    kicker: "PREDMET ODN-06 / ARHIV 1998.",
+    title: "Naknadno dostavljena dokumentacija",
     body: "Mara donese fascikl koji nitko nije tražio. Deni u njemu pronađe obrazac koji ruši službenu priču, ali i dokaz da mu Mara mjesecima nije rekla sve.",
     choices: [
-      { label: "Deni traži cijelu istinu", result: "Mara se uvrijedi jer joj ne vjeruje. Zatim mu donese još dvije kutije dokumenata.", warmth: 8, friction: 8, coins: 28, stories: 3 },
-      { label: "Mara zadrži jedno ime", result: "Deni dobije dovoljno da djeluje, ne dovoljno da razumije. Ona ga štiti i kontrolira istom gestom.", warmth: 10, friction: 10, coins: 24, stories: 3 },
+      { label: "Zatraži potpunu dokumentaciju", result: "Mara se uvrijedi jer joj ne vjeruje. Zatim mu donese još dvije kutije dokumenata.", warmth: 8, friction: 8, coins: 28, stories: 3 },
+      { label: "Prihvati djelomično izuzeće", result: "Deni dobije dovoljno da djeluje, ne dovoljno da razumije. Ona ga štiti i kontrolira istom gestom.", warmth: 10, friction: 10, coins: 24, stories: 3 },
     ],
   },
   {
     id: "empty-chair",
     relation: "ruza-davor",
     people: ["ruza", "davor"],
-    kicker: "BADNJAK / JEDAN TANJUR VIŠKA",
-    title: "Prazna stolica nije prazna",
+    kicker: "PREDMET ODN-07 / BLAGDANSKI OBROK",
+    title: "Povratak bez izrečene pomirbe",
     body: "Ruža postavi Davorov tanjur iako je rekla da ga više neće zvati. Kad se pojavi, kažnjava ga tako da mu servira kao da se ništa nije dogodilo.",
     choices: [
-      { label: "Davor sjedne bez riječi", result: "Oprost nitko ne izgovori. Stol ga svejedno provede kao službeni dokument.", warmth: 13, friction: 5, coins: 20, stories: 3 },
-      { label: "Ruža ga pita pred svima", result: "Jedno kratko pitanje otvori cijelu godinu. Večera preživi, a obitelj dobije novu verziju iste svađe.", warmth: 7, friction: 13, coins: 34, stories: 3 },
+      { label: "Evidentiraj povratak bez izjave", result: "Oprost nitko ne izgovori. Stol ga svejedno provede kao službeni dokument.", warmth: 13, friction: 5, coins: 20, stories: 3 },
+      { label: "Evidentiraj pitanje pred obitelji", result: "Jedno kratko pitanje otvori cijelu godinu. Večera preživi, a obitelj dobije novu verziju iste svađe.", warmth: 7, friction: 13, coins: 34, stories: 3 },
     ],
   },
   {
     id: "missing-minute",
     relation: "deni-karlytta",
     people: ["deni", "karlytta"],
-    kicker: "BACKSTAGE / 02:13",
-    title: "Jedanaest minuta tišine",
+    kicker: "PREDMET ODN-08 / NEDOSTAJUĆI ZAPIS",
+    title: "Jedanaest minuta bez snimke",
     body: "Deni vidi što se dogodilo između dvije snimke. Karlytta ga ne moli da šuti; samo nabroji ljude koji će pasti ako progovori.",
     choices: [
-      { label: "Deni sačuva kopiju", result: "Njoj ne obeća ništa. Upravo zato mu vjeruje više nego ljudima koji su se zakleli.", warmth: 9, friction: 12, coins: 36, stories: 4 },
-      { label: "Karlytta kaže dio istine", result: "Istina izađe dovoljno da povrijedi, premalo da oslobodi. Oboje postaju suučesnici u mjeri.", warmth: 12, friction: 10, coins: 30, stories: 4 },
+      { label: "Pohrani neovisnu kopiju", result: "Njoj ne obeća ništa. Upravo zato mu vjeruje više nego ljudima koji su se zakleli.", warmth: 9, friction: 12, coins: 36, stories: 4 },
+      { label: "Evidentiraj djelomičnu izjavu", result: "Istina izađe dovoljno da povrijedi, premalo da oslobodi. Oboje postaju suučesnici u mjeri.", warmth: 12, friction: 10, coins: 30, stories: 4 },
     ],
   },
 ];
@@ -227,7 +321,10 @@ export function starterPrudinaMergeState(): PrudinaMergeState {
     relations: structuredClone(initialRelations),
     sceneIndex: 0,
     sceneReady: true,
-    lastMessage: "Klikni dva ista predmeta. Oni postaju jedan vredniji.",
+    serviceIndex: 0,
+    serviceStep: 0,
+    servicesCompleted: 0,
+    lastMessage: "Odaberite dvije jednake prijave. Sustav će ih objediniti u višu razinu mjere.",
     serial: 5,
   };
 }
@@ -240,13 +337,72 @@ export function mergesNeeded(state: PrudinaMergeState): number {
   return Math.max(1, 3 - state.upgrades.oldRadio);
 }
 
+export function serviceForState(state: PrudinaMergeState): ServiceRequest {
+  return serviceRequests[state.serviceIndex % serviceRequests.length];
+}
+
+export function programMetrics(state: PrudinaMergeState): {
+  reasonToExist: number;
+  householdStability: number;
+  verifiedCoverage: number;
+} {
+  return {
+    reasonToExist: clamp(90 - state.servicesCompleted * 4 + (state.sceneReady ? 5 : 0), 24, 97),
+    householdStability: clamp(28 + state.servicesCompleted * 11 + state.highestLevel * 3, 0, 100),
+    verifiedCoverage: clamp(18 + state.servicesCompleted * 14 + state.stories * 2, 0, 100),
+  };
+}
+
+export function advanceService(state: PrudinaMergeState): PrudinaMergeState {
+  const request = serviceForState(state);
+  if (state.serviceStep === 0) {
+    return {
+      ...state,
+      serviceStep: 1,
+      lastMessage: `Zahtjev ${request.code} prošao je sigurnosnu provjeru. Fizička radnja još nije odobrena.`,
+    };
+  }
+  if (state.serviceStep === 1) {
+    if (state.coins < request.cost) {
+      return {
+        ...state,
+        lastMessage: `Za izvršenje nedostaje još ${request.cost - state.coins} jedinica raspoloživih sredstava. Potreba ostaje evidentirana.`,
+      };
+    }
+    return {
+      ...state,
+      coins: state.coins - request.cost,
+      serviceStep: 2,
+      lastMessage: `${request.cost} jedinica rezervirano je za nalog ${request.code}. Jedinica P-1 smije krenuti.`,
+    };
+  }
+  if (state.serviceStep === 2) {
+    return {
+      ...state,
+      serviceStep: 3,
+      lastMessage: `Fizička radnja “${request.title}” izvršena je unutar dopuštenih granica. Potreban je završni dokaz.`,
+    };
+  }
+
+  const reimbursement = request.cost + 8;
+  return {
+    ...state,
+    coins: state.coins + reimbursement,
+    stories: state.stories + 2,
+    serviceIndex: (state.serviceIndex + 1) % serviceRequests.length,
+    serviceStep: 0,
+    servicesCompleted: state.servicesCompleted + 1,
+    lastMessage: `Dokaz je prihvaćen. Refundirano je ${reimbursement} jedinica. Riješen slučaj smanjuje potrebu, ali otvara sljedeći nalog.`,
+  };
+}
+
 export function addParcel(state: PrudinaMergeState, randomValue = Math.random(), preferredIndex?: number): PrudinaMergeState {
   const preferredIsEmpty = Number.isInteger(preferredIndex)
     && preferredIndex! >= 0
     && preferredIndex! < BOARD_SIZE
     && state.board[preferredIndex!] === null;
   const emptyIndex = preferredIsEmpty ? preferredIndex! : state.board.findIndex((tile) => tile === null);
-  if (emptyIndex < 0) return { ...state, selectedIndex: null, lastMessage: "Stol je pun. Klikni dva ista predmeta da ih spojiš." };
+  if (emptyIndex < 0) return { ...state, selectedIndex: null, lastMessage: "Registar je popunjen. Objedinite dvije jednake prijave prije novog unosa." };
 
   const betterChance = Math.min(0.5, 0.06 + state.upgrades.betterBag * 0.11);
   const level = randomValue < betterChance ? 2 : 1;
@@ -258,26 +414,26 @@ export function addParcel(state: PrudinaMergeState, randomValue = Math.random(),
     board,
     serial: state.serial + 1,
     highestLevel: Math.max(state.highestLevel, level),
-    lastMessage: level === 2 ? "Veća torba je donijela bolji predmet." : "Novi predmet je na stolu. Pronađi mu isti par.",
+    lastMessage: level === 2 ? "Ubrzana klasifikacija otvorila je prijavu razine 2." : "Nova prijava unesena je u registar. Pronađite joj jednaku razinu.",
   };
 }
 
 export function selectOrMergeTile(state: PrudinaMergeState, index: number): PrudinaMergeState {
   if (!Number.isInteger(index) || index < 0 || index >= BOARD_SIZE) {
-    return { ...state, selectedIndex: null, lastMessage: "To mjesto ne postoji. Odaberi predmet sa stola." };
+    return { ...state, selectedIndex: null, lastMessage: "To registarsko mjesto ne postoji. Odaberite vidljivu prijavu." };
   }
   const tile = state.board[index];
-  if (!tile) return { ...state, selectedIndex: null, lastMessage: "Prazno mjesto. Dodaj novi predmet na stol." };
+  if (!tile) return { ...state, selectedIndex: null, lastMessage: "Prazno registarsko mjesto. Unesite novu prijavu." };
   if (state.selectedIndex === index) return { ...state, selectedIndex: null, lastMessage: "Odabir je poništen." };
-  if (state.selectedIndex === null) return { ...state, selectedIndex: index, lastMessage: `Odabrano: razina ${tile.level}. Sada klikni isti predmet.` };
+  if (state.selectedIndex === null) return { ...state, selectedIndex: index, lastMessage: `Odabrana je prijava razine ${tile.level}. Sada odaberite još jednu iste razine.` };
 
   const firstTile = state.board[state.selectedIndex];
   if (!firstTile) return { ...state, selectedIndex: index };
   if (firstTile.level !== tile.level) {
-    return { ...state, selectedIndex: index, lastMessage: "Ta dva nisu ista. Novi predmet je sada odabran." };
+    return { ...state, selectedIndex: index, lastMessage: "Razine se ne podudaraju. Druga prijava ostaje odabrana." };
   }
   if (tile.level >= MAX_ITEM_LEVEL) {
-    return { ...state, selectedIndex: null, lastMessage: "To je najvrjednija uspomena. Nju više ne treba mijenjati." };
+    return { ...state, selectedIndex: null, lastMessage: "Kućanstvo je službeno stabilno. Daljnje objedinjavanje nije dopušteno." };
   }
 
   const nextLevel = tile.level + 1;
@@ -300,7 +456,7 @@ export function selectOrMergeTile(state: PrudinaMergeState, index: number): Prud
     mergesSinceScene: unlockScene ? mergesNeeded(state) : nextMergesSinceScene,
     highestLevel: Math.max(state.highestLevel, nextLevel),
     sceneReady: state.sceneReady || unlockScene,
-    lastMessage: unlockScene ? "Spojeno! Nova obiteljska scena čeka tvoju odluku." : `Spojeno u razinu ${nextLevel}. Dobivaš ${reward} kovanica.`,
+    lastMessage: unlockScene ? "Prijave su objedinjene. Otvorena je nova procjena međuovisnosti kućanstva." : `Mjera je podignuta na razinu ${nextLevel}. Dodijeljeno je ${reward} jedinica sredstava.`,
   };
 }
 
@@ -337,14 +493,14 @@ export function upgradeCost(id: UpgradeId, level: number): number {
 export function buyUpgrade(state: PrudinaMergeState, id: UpgradeId): PrudinaMergeState {
   const level = state.upgrades[id];
   const cost = upgradeCost(id, level);
-  if (level >= 5) return { ...state, lastMessage: "Ta je nadogradnja već dovršena." };
-  if (state.coins < cost) return { ...state, lastMessage: `Nedostaje još ${cost - state.coins} kovanica.` };
+  if (level >= 5) return { ...state, lastMessage: "Ta je mjera kapaciteta već u cijelosti aktivirana." };
+  if (state.coins < cost) return { ...state, lastMessage: `Za aktivaciju nedostaje još ${cost - state.coins} jedinica sredstava.` };
 
   return {
     ...state,
     coins: state.coins - cost,
     upgrades: { ...state.upgrades, [id]: level + 1 },
-    lastMessage: "Nadogradnja kupljena. Promjena vrijedi odmah.",
+    lastMessage: "Mjera kapaciteta aktivirana je i primjenjuje se odmah.",
   };
 }
 
@@ -400,6 +556,9 @@ export function restorePrudinaMergeState(value: unknown): PrudinaMergeState {
     relations: restoredRelations,
     sceneIndex,
     sceneReady: typeof candidate.sceneReady === "boolean" ? candidate.sceneReady : fallback.sceneReady,
+    serviceIndex: safeInteger(candidate.serviceIndex, fallback.serviceIndex, 0, serviceRequests.length - 1),
+    serviceStep: safeInteger(candidate.serviceStep, fallback.serviceStep, 0, 3) as ServiceStep,
+    servicesCompleted: safeInteger(candidate.servicesCompleted, fallback.servicesCompleted, 0, 999_999),
     lastMessage: typeof candidate.lastMessage === "string" && candidate.lastMessage.length <= 240 ? candidate.lastMessage : fallback.lastMessage,
     serial: Math.max(maxSerialOnBoard + 1, safeInteger(candidate.serial, fallback.serial, 1, 999_999_999)),
   };

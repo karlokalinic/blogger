@@ -14,7 +14,7 @@ const links = [
   ["/archive", "World archive"],
   ["/devlog", "Devlog"],
   ["/karlytta", "Karlytta"],
-  ["/merge-game", "Svi za stolom"],
+  ["/merge-game", "Program ODRŽI"],
   ["/captures", "Captures"],
   ["/about", "About"],
 ] as const;

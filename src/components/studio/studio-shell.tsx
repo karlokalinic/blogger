@@ -40,7 +40,7 @@ const sections = [
     links: [
       ["/studio/media", "Media vault + 3D", UploadCloud],
       ["/studio/whiteboard", "World whiteboard", Network],
-      ["/merge-game", "Svi za stolom", Gamepad2],
+      ["/merge-game", "Program ODRŽI", Gamepad2],
       ["/studio/check-in", "Private check-in", Sparkles],
     ],
   },

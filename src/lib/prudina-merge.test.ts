@@ -2,9 +2,11 @@ import { describe, expect, it } from "vitest";
 import {
   BOARD_SIZE,
   addParcel,
+  advanceService,
   buyUpgrade,
   chooseFamilyScene,
   restorePrudinaMergeState,
+  programMetrics,
   selectOrMergeTile,
   starterPrudinaMergeState,
   upgradeCost,
@@ -92,5 +94,38 @@ describe("Prudina merge game", () => {
     const invalid = selectOrMergeTile(state, 99);
     expect(invalid.board).toEqual(state.board);
     expect(invalid.selectedIndex).toBeNull();
+  });
+
+  it("executes a physical service only through all four controlled stages", () => {
+    const initial = starterPrudinaMergeState();
+    const checked = advanceService(initial);
+    const funded = advanceService(checked);
+    const executed = advanceService(funded);
+    const closed = advanceService(executed);
+
+    expect(checked.serviceStep).toBe(1);
+    expect(funded.serviceStep).toBe(2);
+    expect(funded.coins).toBe(initial.coins - 18);
+    expect(executed.serviceStep).toBe(3);
+    expect(closed.serviceStep).toBe(0);
+    expect(closed.servicesCompleted).toBe(1);
+    expect(closed.stories).toBe(2);
+    expect(closed.coins).toBe(initial.coins + 8);
+  });
+
+  it("keeps an unfunded physical request open instead of silently executing it", () => {
+    const checked = advanceService({ ...starterPrudinaMergeState(), coins: 0 });
+    const denied = advanceService(checked);
+    expect(denied.serviceStep).toBe(1);
+    expect(denied.coins).toBe(0);
+    expect(denied.lastMessage).toContain("nedostaje");
+  });
+
+  it("shows the institutional tradeoff after a household service is completed", () => {
+    const before = starterPrudinaMergeState();
+    let after = before;
+    for (let index = 0; index < 4; index += 1) after = advanceService(after);
+    expect(programMetrics(after).householdStability).toBeGreaterThan(programMetrics(before).householdStability);
+    expect(programMetrics(after).reasonToExist).toBeLessThan(programMetrics(before).reasonToExist);
   });
 });
