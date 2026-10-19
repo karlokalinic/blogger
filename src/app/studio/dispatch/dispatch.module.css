@@ -1,0 +1,43 @@
+.wrapper{padding:clamp(18px,3.8vw,46px);color:#e8e7df;background:#111412;min-height:calc(100vh - 60px);font-family:inherit}
+.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;border-bottom:1px solid #3c403a;padding-bottom:26px;margin-bottom:30px}
+.heading h1{font-size:clamp(34px,5vw,74px);line-height:1;letter-spacing:-.065em;font-weight:640;margin:14px 0 12px}
+.heading p,.attachments p,.publication p{color:#a9aea5;font-size:14px;margin:5px 0;line-height:1.6}
+.eyebrow{font-size:10px;font-family:monospace;font-weight:700;letter-spacing:.18em;color:#dbbb73}
+.layout{display:grid;grid-template-columns:minmax(205px,255px) minmax(0,1fr);gap:32px;max-width:1440px}
+.aside{border-right:1px solid #353a33;padding:8px 20px 20px 0;display:flex;flex-direction:column;gap:12px}
+.aside .eyebrow{margin-bottom:12px}
+.draft,.activeDraft{border:1px solid #3a4138;border-radius:4px;text-align:left;padding:13px;display:flex;flex-direction:column;gap:5px;cursor:pointer;background:#171c18;color:#b9bfb4;max-width:100%}
+.activeDraft{border-color:#ceab68;background:#26281f;color:#fff}
+.draft strong,.activeDraft strong{font-size:13px;overflow-wrap:anywhere}
+.draft span,.activeDraft span{font-size:10px;color:#92998f}
+.editor{display:flex;flex-direction:column;gap:22px;max-width:980px}
+.formRow{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:18px}
+.field{display:flex;flex-direction:column;gap:10px;min-width:0}
+.field>span{font-family:monospace;font-size:11px;color:#bcbcac;letter-spacing:.13em}
+.field input,.field select,.field textarea{background:#1a201b;color:#f5f5ea;border:1px solid #3f463e;border-radius:4px;width:100%;min-width:0;padding:13px 14px;font-size:15px;outline-offset:3px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#c8a769;outline:1px solid #c8a769}
+.field textarea{min-height:210px;resize:vertical;line-height:1.65;white-space:pre-wrap;tab-size:4;font-family:ui-monospace,"Cascadia Code",monospace}
+.field input::placeholder,.field textarea::placeholder{color:#767f75}
+.attachments,.publication{border-top:1px solid #3a4039;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.fileLabel,.secondaryButton,.primaryButton{border:1px solid #9a8b6c;border-radius:3px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;justify-content:center;padding:11px 15px;font-size:13px;font-weight:600;background:#272b25;color:#e7e6d7;white-space:nowrap}
+.fileLabel input{display:none}
+.primaryButton{background:#e4bd73;border-color:#e4bd73;color:#141612}
+.primaryButton:disabled{opacity:.55;cursor:wait}
+.secondaryButton:hover,.fileLabel:hover{border-color:#f0d399}
+.assetList{display:flex;flex-direction:column;border:1px solid #343b32;border-radius:4px}
+.asset{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 16px}
+.asset+.asset{border-top:1px solid #343b32}
+.asset>span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.asset strong{font-size:13px;font-weight:500;overflow-wrap:anywhere}
+.asset small{font-size:11px;color:#a5ab9f}
+.asset button{border:0;background:transparent;color:#dfae9b;cursor:pointer;font-size:12px}
+.visibility{display:flex;border:1px solid #56564b;border-radius:3px;overflow:hidden;flex-shrink:0}
+.visibility button{background:transparent;border:0;color:#b7bdaf;cursor:pointer;padding:12px 18px;font-size:13px}
+.visibility .selected{background:#d8b675;color:#15160e;font-weight:700}
+.actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px;border-top:1px solid #3a4039;padding:20px 0}
+.actions .small{margin-right:auto}
+.small{color:#919b8f;line-height:1.6;font-size:12px}
+.notice{padding:16px;border:1px solid #6d6f57;background:#26281f;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.textLink{font-size:12px;color:#edd3a2;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:940px){.layout{grid-template-columns:1fr;gap:18px}.aside{border:0;border-bottom:1px solid #343a32;padding:0 0 20px}.heading{align-items:start}.formRow{grid-template-columns:1fr}}
+@media(max-width:570px){.wrapper{padding:18px}.heading,.attachments,.publication{flex-direction:column;align-items:stretch}.visibility,.visibility button{flex:1}.actions{justify-content:stretch}.actions button{flex:1}.aside{max-height:240px;overflow:auto}}
