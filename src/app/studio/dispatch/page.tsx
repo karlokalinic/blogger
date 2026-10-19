@@ -112,23 +112,25 @@ export default function DispatchPage() {
   const [customProject, setCustomProject] = useState(false);
 
   useEffect(() => {
-    try {
-      const ids = readIndex();
-      setIndex(ids);
-      const loaded = ids.length ? localStorage.getItem(STORAGE_PREFIX + ids[0]) : null;
-      const parsed = loaded ? JSON.parse(loaded) as Entry : freshEntry();
-      setEntry(parsed);
-      setCustomProject(!PROJECTS.includes(parsed.project));
-      setSaveState("Lokalni nacrt učitan");
-    } catch {
-      setEntry(freshEntry());
-      setSaveState("Novi lokalni nacrt");
-    }
+    const frame = window.requestAnimationFrame(() => {
+      try {
+        const ids = readIndex();
+        setIndex(ids);
+        const loaded = ids.length ? localStorage.getItem(STORAGE_PREFIX + ids[0]) : null;
+        const parsed = loaded ? JSON.parse(loaded) as Entry : freshEntry();
+        setEntry(parsed);
+        setCustomProject(!PROJECTS.includes(parsed.project));
+        setSaveState("Lokalni nacrt učitan");
+      } catch {
+        setEntry(freshEntry());
+        setSaveState("Novi lokalni nacrt");
+      }
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
     if (!entry) return;
-    setSaveState("Nespremljene izmjene");
     const timer = window.setTimeout(() => {
       try {
         const updated = { ...entry, updated: new Date().toISOString() };
