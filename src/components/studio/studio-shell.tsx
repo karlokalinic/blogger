@@ -31,6 +31,7 @@ const sections = [
     links: [
       ["/studio", "Overview", LayoutDashboard],
       ["/studio/write", "Writing desk", BookOpenText],
+      ["/studio/dispatch", "Dnevnik rada", FileText],
       ["/studio/catalogue", "Record wizard", Archive],
       ["/studio/progress", "Progress board", Gauge],
     ],
