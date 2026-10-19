@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { upload } from "@vercel/blob/client";
 import { useEffect, useState } from "react";
 import styles from "./dispatch.module.css";
 
@@ -224,16 +225,17 @@ export default function DispatchPage() {
           if (!url) {
             const file = await readFile(attachment.id);
             if (!file) throw new Error("Nedostaje lokalna datoteka: " + attachment.name);
-            const form = new FormData();
-            form.append("file", file, attachment.name);
-            const response = await fetch("/api/upload", { method: "POST", body: form });
-            const payload = await response.json().catch(() => ({}));
-            if (!response.ok) throw new Error(payload.error || "Upload nije uspio: " + attachment.name);
-            if (typeof payload.url !== "string" || !payload.url.startsWith("https://")) throw new Error("Poslužitelj nije vratio sigurnu adresu datoteke.");
-            url = payload.url;
+            const safeName = attachment.name.replace(/[^a-zA-Z0-9._-]+/g, "-");
+            const result = await upload("project-assets/" + entry.slug + "/" + safeName, file, {
+              access: "public",
+              handleUploadUrl: "/api/upload-client",
+            });
+            if (!result.url.startsWith("https://")) throw new Error("Poslužitelj nije vratio sigurnu adresu datoteke.");
+            url = result.url;
             uploaded[attachment.id] = url;
-            // Persist links immediately so retrying a failed publication does not re-upload them.
+            // Persist each completed upload immediately: retries must not duplicate files.
             try { localStorage.setItem(STORAGE_PREFIX + entry.slug, JSON.stringify({ ...entry, uploaded })); } catch {}
+            setEntry((current) => current?.slug === entry.slug ? { ...current, uploaded: { ...uploaded } } : current);
           }
           linkedAssets.push({ name: attachment.name, type: attachment.type, url });
         }
