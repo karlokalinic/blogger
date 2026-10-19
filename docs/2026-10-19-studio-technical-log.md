@@ -2,7 +2,7 @@
 
 Datum: 2026-10-19
 Grana: feature/studio-dnevnik-2026-10-19
-Status: implementirano u razvojnoj grani; CI/build i produkcijsko testiranje nisu potvrđeni
+Status: Vercel preview build READY; integracijski i produkcijski testovi nisu potvrđeni
 Svrha: zapisati tekst + priložiti snimku + povezati projekt + odlučiti privatno/javno bez korištenja IDE-a.
 
 ## TL-001 — inventura prije zahvata
@@ -40,8 +40,11 @@ Objave: fotografije u postojeći gallery, audio/video/datoteke u posebno parsira
 ## TL-005 — provjere
 
 Provedeno: pregled postojećih GitHub datoteka i kontrolirano zapisivanje na zasebnoj grani.
-Nije provedeno: npm ci, eslint, tsc, Next.js build, browser e2e, spoj na stvarnu bazu, Vercel Blob upload u stvarnoj sesiji.
-Razlog: iz ovog radnog okruženja javni Git clone nije dostupan (DNS mreža nedostupna).
+Automatski Vercel build: READY (git commit 30d83afe8216899909fa9a75a236c41a45b61cae), GitHub Vercel check: success.
+Nije zasebno potvrđeno: npm run lint, npm test, browser e2e, spoj na stvarnu bazu, Vercel Blob upload u stvarnoj sesiji.
+Razlog izostanka lokalnog izvođenja: iz ovog radnog okruženja javni Git clone nije dostupan (DNS mreža nedostupna).
+Vercel preview: karlolegendblog-git-feature-studi-4010f5-karlokalinics-projects.vercel.app.
+Konfiguracija: imena DATABASE_URL, BLOB_READ_WRITE_TOKEN, AUTH_SECRET i STUDIO_PASSWORD postoje u Vercel projektu za preview, bez čitanja vrijednosti; njihova valjanost nije provjerena.
 Provjeriti PRIJE mergea:
 1. U CI izvršiti npm ci && npm run lint && npx tsc --noEmit && npm test && npm run build.
 2. /studio/dispatch bez prijave vraća login/odbijanje.
