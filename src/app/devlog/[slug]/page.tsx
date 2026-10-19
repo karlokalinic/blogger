@@ -89,6 +89,13 @@ export default async function DevlogPostPage({ params }: { params: Promise<{ slu
 }
 
 function renderArticleBlock(paragraph: string, sectionIndex: number, paragraphIndex: number) {
+  const asset = paragraph.match(/^\[\[asset\|(video|audio|file)\|([^|\]]{1,180})\|(https:\/\/[^|\]]+)\]\]$/);
+  if (asset) {
+    const [, kind, label, url] = asset;
+    if (kind === "video") return <figure key={sectionIndex + "-" + paragraphIndex}><video controls preload="metadata" src={url} style={{ width: "100%", maxHeight: 540 }} /><figcaption>{label}</figcaption></figure>;
+    if (kind === "audio") return <figure key={sectionIndex + "-" + paragraphIndex}><audio controls preload="none" src={url} style={{ width: "100%" }} /><figcaption>{label}</figcaption></figure>;
+    return <p key={sectionIndex + "-" + paragraphIndex}><a href={url} target="_blank" rel="noopener noreferrer" download>{label} ↗</a></p>;
+  }
   const image = paragraph.match(/^!\[(.*)\]\((.+)\)$/);
   if (image) {
     return (
