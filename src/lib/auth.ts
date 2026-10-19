@@ -14,6 +14,8 @@ function sessionValue() {
 }
 
 export async function isStudioAuthenticated() {
+  // Never accept a predictable preview HMAC secret in production.
+  if (process.env.NODE_ENV === "production" && (!process.env.STUDIO_PASSWORD || !process.env.AUTH_SECRET || process.env.AUTH_SECRET.length < 32)) return false;
   if (!studioProtectionEnabled()) return true;
   const value = (await cookies()).get(COOKIE_NAME)?.value;
   if (!value) return false;
