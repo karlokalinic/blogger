@@ -14,6 +14,7 @@ type Entry = {
   prose: string;
   visibility: Visibility;
   attachments: Attachment[];
+  uploaded?: Record<string, string>;
   updated: string;
 };
 
@@ -33,6 +34,7 @@ function freshEntry(): Entry {
     prose: "",
     visibility: "private",
     attachments: [],
+    uploaded: {},
     updated: new Date().toISOString(),
   };
 }
@@ -214,18 +216,28 @@ export default function DispatchPage() {
     setBusy(true);
     setNotice("Spremanje…");
     const linkedAssets: Array<{ name: string; type: string; url: string }> = [];
+    const uploaded = { ...entry.uploaded };
     try {
       if (entry.visibility === "public") {
         for (const attachment of entry.attachments) {
-          const file = await readFile(attachment.id);
-          if (!file) throw new Error("Nedostaje lokalna datoteka: " + attachment.name);
-          const form = new FormData();
-          form.append("file", file, attachment.name);
-          const response = await fetch("/api/upload", { method: "POST", body: form });
-          const payload = await response.json().catch(() => ({}));
-          if (!response.ok) throw new Error(payload.error || "Upload nije uspio: " + attachment.name);
-          linkedAssets.push({ name: attachment.name, type: attachment.type, url: payload.url });
+          let url = uploaded[attachment.id];
+          if (!url) {
+            const file = await readFile(attachment.id);
+            if (!file) throw new Error("Nedostaje lokalna datoteka: " + attachment.name);
+            const form = new FormData();
+            form.append("file", file, attachment.name);
+            const response = await fetch("/api/upload", { method: "POST", body: form });
+            const payload = await response.json().catch(() => ({}));
+            if (!response.ok) throw new Error(payload.error || "Upload nije uspio: " + attachment.name);
+            if (typeof payload.url !== "string" || !payload.url.startsWith("https://")) throw new Error("Poslužitelj nije vratio sigurnu adresu datoteke.");
+            url = payload.url;
+            uploaded[attachment.id] = url;
+            // Persist links immediately so retrying a failed publication does not re-upload them.
+            try { localStorage.setItem(STORAGE_PREFIX + entry.slug, JSON.stringify({ ...entry, uploaded })); } catch {}
+          }
+          linkedAssets.push({ name: attachment.name, type: attachment.type, url });
         }
+        setEntry((current) => current?.slug === entry.slug ? { ...current, uploaded } : current);
       }
       const images = linkedAssets.filter((file) => file.type.startsWith("image/")).map((file) => ({
         src: file.url, alt: file.name, caption: "", label: "RADNI MATERIJAL",
